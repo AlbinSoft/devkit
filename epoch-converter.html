@@ -1,0 +1,35 @@
+<section>
+  <h2>Epoch to date</h2>
+  <div class="epoch-row">
+    <label>Timestamp<br>
+      <input type="text" id="epoch-input" inputmode="numeric" spellcheck="false" placeholder="1704067200">
+    </label>
+    <label>Unit<br>
+      <select id="epoch-unit">
+        <option value="auto">Auto-detect</option>
+        <option value="s">Seconds</option>
+        <option value="ms">Milliseconds</option>
+      </select>
+    </label>
+    <button type="button" id="epoch-now-btn">Use now</button>
+  </div>
+  <p id="epoch-err" hidden></p>
+  <dl id="epoch-out" hidden></dl>
+</section>
+<section>
+  <h2>Date to epoch</h2>
+  <div class="epoch-row">
+    <label>Local date and time<br>
+      <input type="datetime-local" id="epoch-dt" step="1">
+    </label>
+    <label>Or paste a date string<br>
+      <input type="text" id="epoch-str" spellcheck="false" placeholder="2024-01-01T00:00:00Z">
+    </label>
+  </div>
+  <p id="epoch-rev-err" hidden></p>
+  <dl id="epoch-rev-out" hidden></dl>
+</section>
+<section>
+  <h2>Now</h2>
+  <dl id="epoch-clock"></dl>
+</section>

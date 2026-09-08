@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="/" />
+	<title>Devkit - AdsFree CookieFree</title>
+	<meta name="description" id="meta-description" content="Devkit — free online tools, no ads, no cookies.">
+	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#1e293b"  media="(prefers-color-scheme: dark)">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icos/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icos/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icos/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="16x16"  href="/icos/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32"  href="/icos/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/icos/android-chrome-192x192.png">
+	<link rel="icon" type="image/x-icon" href="/icos/favicon.ico">
+	<link rel="shortcut icon" href="/icos/favicon.ico">
+	<link id="canonical" rel="canonical" href="https://devkit.albin.es/">
+	<link id="global-css" rel="stylesheet" href="" />
+	<link id="tool-css" rel="stylesheet" href="" />
+	<script>
+		(function () {
+			var t = localStorage.getItem('theme');
+			if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark');
+			}
+		})();
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/jszip@3/dist/jszip.min.js"></script>
+	<script type="module">
+		const urlbase = 'https://devkit.albin.es/';
+		const basePath = new URL(urlbase).pathname;
+		document.querySelector('base').href = urlbase;
+		document.getElementById('global-css').href = urlbase + 'style.css';
+
+		let groups = [];
+		let getApiKey = null;
+
+		function setCanonical(path) {
+			document.getElementById('canonical').href = urlbase.replace(/\/$/, '') + path;
+		}
+
+		async function init() {
+			groups = await fetch(urlbase + 'registry.json').then(r => r.json());
+			groups.sort((a, b) => a.name.localeCompare(b.name));
+			for (const g of groups) g.tools.sort((a, b) => a.name.localeCompare(b.name));
+			({ getApiKey } = await import(urlbase + 'api-keys.js'));
+			buildMenu();
+			routeFromURL();
+		}
+
+		function buildMenu() {
+			const ul = document.querySelector('aside > ul');
+			ul.innerHTML = '';
+			for (const group of groups) {
+				const li    = document.createElement('li');
+				const span  = document.createElement('span');
+				span.textContent = group.name;
+				const subUl = document.createElement('ul');
+				for (const tool of group.tools) {
+					if (tool.hidden) continue;
+					const subLi = document.createElement('li');
+					const a     = document.createElement('a');
+					a.href = basePath + tool.slug.slice(1);
+					a.textContent = tool.name;
+					a.dataset.slug = tool.slug;
+					a.addEventListener('click', e => {
+						e.preventDefault();
+						history.pushState({ slug: tool.slug }, tool.name, basePath + tool.slug.slice(1));
+						loadTool(tool);
+					});
+					subLi.appendChild(a);
+					subUl.appendChild(subLi);
+				}
+				li.appendChild(span);
+				li.appendChild(subUl);
+				ul.appendChild(li);
+			}
+		}
+
+		function findTool(slug) {
+			for (const group of groups) {
+				const tool = group.tools.find(t => t.slug === slug);
+				if (tool) return tool;
+			}
+			return null;
+		}
+
+		function setActive(slug) {
+			document.querySelectorAll('aside a').forEach(a => {
+				a.classList.toggle('active', a.dataset.slug === slug);
+			});
+		}
+
+		function routeFromURL() {
+			const slug = '/' + window.location.pathname.slice(basePath.length);
+			const tool = findTool(slug);
+			if (tool) loadTool(tool);
+			else if (slug !== '/') showNotFound(slug);
+			else showHome();
+		}
+
+		function showHome() {
+			const main = document.querySelector('main');
+			document.getElementById('tool-css').href = '';
+			document.title = 'Devkit - AdsFree CookieFree';
+			document.getElementById('meta-description').content = 'Devkit — free online tools, no ads, no cookies.';
+			setCanonical('/');
+			document.querySelectorAll('aside a').forEach(a => a.classList.remove('active'));
+
+			const sectionsHTML = groups.map(g => `
+				<section>
+					<h2>${g.name}</h2>
+					<div class="home-tools">
+						${g.tools.filter(t => !t.hidden).map(t => `<a href="${basePath}${t.slug.slice(1)}" data-slug="${t.slug}">${t.name}</a>`).join('')}
+					</div>
+				</section>
+			`).join('');
+
+			main.innerHTML = `<h1>Devkit</h1><p class="tool-desc">Free online developer tools — no ads, no cookies.</p>${sectionsHTML}`;
+
+			main.querySelectorAll('[data-slug]').forEach(a => {
+				a.addEventListener('click', e => {
+					e.preventDefault();
+					const tool = findTool(a.dataset.slug);
+					if (!tool) return;
+					history.pushState({ slug: tool.slug }, tool.name, basePath + tool.slug.slice(1));
+					loadTool(tool);
+				});
+			});
+		}
+
+		function showNotFound(slug) {
+			const main = document.querySelector('main');
+			document.getElementById('tool-css').href = '';
+			setCanonical('/');
+			main.innerHTML = `<h1>Tool not found</h1><p class="not-found-slug">${slug}</p>`;
+			document.querySelectorAll('aside a').forEach(a => a.classList.remove('active'));
+		}
+
+		async function loadTool(tool) {
+			closeSidebar();
+			const main = document.querySelector('main');
+
+			// Herramientas que requieren API key configurada en Settings
+			if (tool.requiresApiKey && !getApiKey(tool.requiresApiKey)) {
+				document.getElementById('tool-css').href = '';
+				const desc = tool.description ? `<p class="tool-desc">${tool.description}</p>` : '';
+				main.innerHTML = `<h1>${tool.name}</h1>${desc}
+					<section>
+						<h2>API key required</h2>
+						<p>This tool needs a personal API key. <a href="${basePath}settings">Configure it in Settings</a>.</p>
+					</section>`;
+				document.title = `${tool.title ?? tool.name} · Devkit - AdsFree CookieFree`;
+				document.getElementById('meta-description').content = tool.description ?? '';
+				setCanonical(tool.slug);
+				setActive(tool.slug);
+				main.querySelector('a[href$="/settings"]').addEventListener('click', e => {
+					e.preventDefault();
+					const settingsTool = findTool('/settings');
+					if (!settingsTool) return;
+					history.pushState({ slug: settingsTool.slug }, settingsTool.name, basePath + settingsTool.slug.slice(1));
+					loadTool(settingsTool);
+				});
+				return;
+			}
+
+			// CSS de la herramienta
+			const cssLink = document.getElementById('tool-css');
+			cssLink.href = tool.css ? urlbase + tool.css : '';
+
+			// HTML de la herramienta
+			const html = await fetch(urlbase + tool.html).then(r => r.text());
+			const desc  = tool.description ? `<p class="tool-desc">${tool.description}</p>` : '';
+			const howto = tool.howto       ? `<p class="tool-howto">${tool.howto}</p>`       : '';
+			main.innerHTML = `<h1>${tool.name}</h1>${desc}${howto}` + html;
+			document.title = `${tool.title ?? tool.name} · Devkit - AdsFree CookieFree`;
+			document.getElementById('meta-description').content = tool.description ?? '';
+			setCanonical(tool.slug);
+
+			// JS de la herramienta (módulo)
+			const module = await import(urlbase + tool.js);
+			if (typeof module.init === 'function') module.init();
+
+			setActive(tool.slug);
+		}
+
+		window.addEventListener('popstate', routeFromURL);
+
+		// --- Sidebar toggle ---
+		const sidebarToggle   = document.getElementById('sidebar-toggle');
+		const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+		const sidebarEl       = document.querySelector('aside');
+
+		function openSidebar() {
+			sidebarEl.classList.add('open');
+			sidebarBackdrop.classList.add('visible');
+			sidebarToggle.textContent = '✕';
+		}
+		function closeSidebar() {
+			sidebarEl.classList.remove('open');
+			sidebarBackdrop.classList.remove('visible');
+			sidebarToggle.textContent = '☰';
+		}
+
+		sidebarToggle.addEventListener('click', () =>
+			sidebarEl.classList.contains('open') ? closeSidebar() : openSidebar()
+		);
+		sidebarBackdrop.addEventListener('click', closeSidebar);
+
+		// --- Sidebar search ---
+		document.getElementById('sidebar-search').addEventListener('input', function () {
+			const q = this.value.trim().toLowerCase();
+			document.querySelectorAll('aside > ul > li').forEach(groupLi => {
+				let any = false;
+				groupLi.querySelectorAll('ul > li').forEach(toolLi => {
+					const match = !q || toolLi.querySelector('a').textContent.toLowerCase().includes(q);
+					toolLi.hidden = !match;
+					if (match) any = true;
+				});
+				groupLi.hidden = !any;
+			});
+		});
+
+		// --- Theme toggle ---
+		document.getElementById('theme-toggle').addEventListener('click', () => {
+			const dark = !document.documentElement.classList.contains('dark');
+			document.documentElement.classList.toggle('dark', dark);
+			localStorage.setItem('theme', dark ? 'dark' : 'light');
+		});
+
+		init();
+
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js');
+		}
+	</script>
+</head>
+<body>
+
+	<button type="button" id="sidebar-toggle" aria-label="Open menu">☰</button>
+	<div id="sidebar-backdrop"></div>
+	<aside>
+		<div id="sidebar-brand">Devkit <button type="button" id="theme-toggle" aria-label="Toggle theme"></button></div>
+		<input type="search" id="sidebar-search" placeholder="Search…" autocomplete="off" spellcheck="false">
+		<ul></ul>
+	</aside>
+	<main></main>
+
+</body>
+</html>

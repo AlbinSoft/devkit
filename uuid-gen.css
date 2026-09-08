@@ -1,0 +1,64 @@
+.uuid-row {
+	gap: 16px;
+}
+
+#uuid-form select {
+	display: block;
+	margin-top: 5px;
+	padding: 8px 12px;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	font: inherit;
+	color: var(--text);
+	background: var(--surface);
+	outline: none;
+	cursor: pointer;
+	transition: border-color .15s;
+}
+
+#uuid-form select:focus {
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+#uuid-output {
+	margin-top: 12px;
+}
+
+#uuid-output:not([hidden]) {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+#uuid-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+#uuid-list li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 14px;
+	background: var(--bg);
+	border: 1px solid var(--border);
+	border-radius: 6px;
+}
+
+#uuid-list code {
+	flex: 1;
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size: 13px;
+	color: var(--text);
+}
+
+#uuid-list button {
+	flex-shrink: 0;
+}
+
+#uuid-copy-all {
+	align-self: flex-start;
+}

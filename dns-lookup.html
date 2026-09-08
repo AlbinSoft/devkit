@@ -1,0 +1,30 @@
+<form id="dns-form">
+  <div class="dns-row">
+    <label class="dns-domain-label">Domain<br>
+      <input type="text" id="dns-domain" placeholder="example.com" spellcheck="false" autocomplete="off">
+    </label>
+    <label>Type<br>
+      <select id="dns-type">
+        <option>A</option>
+        <option>AAAA</option>
+        <option>MX</option>
+        <option>TXT</option>
+        <option>NS</option>
+        <option>CNAME</option>
+        <option>SOA</option>
+        <option>CAA</option>
+        <option>PTR</option>
+      </select>
+    </label>
+  </div>
+  <button type="submit">Lookup</button>
+</form>
+<p id="dns-status"></p>
+<div id="dns-output" hidden>
+  <div class="dns-table-wrap">
+    <table id="dns-table">
+      <thead><tr><th>Name</th><th>TTL</th><th>Data</th></tr></thead>
+      <tbody id="dns-tbody"></tbody>
+    </table>
+  </div>
+</div>

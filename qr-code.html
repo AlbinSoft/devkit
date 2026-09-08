@@ -1,0 +1,40 @@
+<form id="qr-form">
+  <div class="qr-row">
+    <label>Type<br>
+      <select id="qr-type">
+        <option value="text">Text</option>
+        <option value="url">URL / Link</option>
+      </select>
+    </label>
+    <label>Error correction<br>
+      <select id="qr-ecc">
+        <option value="L">L &mdash; 7%</option>
+        <option value="M" selected>M &mdash; 15%</option>
+        <option value="Q">Q &mdash; 25%</option>
+        <option value="H">H &mdash; 30%</option>
+      </select>
+    </label>
+    <label>PNG size<br>
+      <select id="qr-size">
+        <option value="128">128 px</option>
+        <option value="256">256 px</option>
+        <option value="512" selected>512 px</option>
+        <option value="1024">1024 px</option>
+      </select>
+    </label>
+  </div>
+  <label>Content<br>
+    <textarea id="qr-text" rows="3" spellcheck="false"></textarea>
+  </label>
+</form>
+<p id="qr-error" hidden></p>
+<div id="qr-output" hidden>
+  <img id="qr-preview" alt="QR code preview">
+  <p id="qr-meta"></p>
+  <div id="qr-actions">
+    <a id="qr-dl-png" class="btn" download="qrcode.png">Download PNG</a>
+    <a id="qr-dl-svg" class="btn" download="qrcode.svg">Download SVG</a>
+    <button type="button" id="qr-copy-png" hidden>Copy PNG</button>
+    <button type="button" id="qr-copy-svg">Copy SVG</button>
+  </div>
+</div>

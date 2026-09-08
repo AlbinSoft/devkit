@@ -1,0 +1,185 @@
+/* ── Hex viewer ───────────────────────────────────── */
+
+#hv-wrap {
+	display:        flex;
+	flex-direction: column;
+	gap:            12px;
+}
+
+/* Drop zone -- misma estetica que hash-checker */
+#hv-drop {
+	display:         flex;
+	align-items:     center;
+	justify-content: center;
+	border:          2px dashed var(--border);
+	border-radius:   var(--radius);
+	padding:         20px 24px;
+	color:           var(--text-2);
+	font-size:       13px;
+	cursor:          pointer;
+	transition:      border-color .15s, background .15s, color .15s;
+	position:        relative;
+}
+
+#hv-drop:hover,
+#hv-drop.drag-over {
+	border-color: var(--accent);
+	background:   var(--accent-bg);
+	color:        var(--accent);
+}
+
+#hv-drop input[type="file"] {
+	position: absolute;
+	inset:    0;
+	opacity:  0;
+	cursor:   pointer;
+	width:    100%;
+	height:   100%;
+}
+
+/* Mensaje de error */
+#hv-msg {
+	font-size: 13px;
+	color:     var(--text-2);
+}
+
+/* Panel del visor */
+#hv-viewer {
+	border:        1px solid var(--border);
+	border-radius: var(--radius);
+	overflow:      hidden;
+}
+
+/* Cabecera de columnas (fuera del scroll) */
+#hv-head {
+	background:    var(--bg);
+	border-bottom: 1px solid var(--border);
+	padding:       0 12px;
+}
+
+/* Area de scroll virtual */
+#hv-scroll {
+	overflow-y: auto;
+	height:     480px;
+	position:   relative;
+	background: var(--surface);
+}
+
+/* Espaciador -- su altura la fija el JS para crear el rango de scroll */
+#hv-space { width: 100%; }
+
+/* Canvas de filas renderizadas (posicion absoluta dentro del scroll) */
+#hv-canvas {
+	position: absolute;
+	left:     0;
+	right:    0;
+	top:      0;
+	padding:  0 12px;
+}
+
+/* ── Filas ────────────────────────────────────────── */
+/* ROW_H = 22 -- debe coincidir con la constante en hex-view.js */
+.hv-row {
+	display:     flex;
+	align-items: center;
+	height:      22px;
+	line-height: 22px;
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size:   13px;
+	white-space: nowrap;
+	user-select: none;
+}
+
+/* Columna de offset */
+.hv-off {
+	width:       9ch;
+	flex-shrink: 0;
+	color:       var(--text-2);
+}
+
+/* Seccion hex */
+.hv-hex {
+	display:     flex;
+	flex-shrink: 0;
+}
+
+.hv-byte {
+	width:        2ch;   /* solo los 2 digitos */
+	margin-right: 1ch;   /* espacio como margen -- el background no lo cubre */
+	cursor:       default;
+}
+
+/* Espacio extra entre el grupo de 8 y el grupo de 8 */
+.hv-sep {
+	width:       1ch;
+	flex-shrink: 0;
+}
+
+/* Bytes de relleno en la ultima fila incompleta */
+.hv-pad {
+	color:          transparent;
+	pointer-events: none;
+}
+
+/* Columna ASCII */
+.hv-asc {
+	border-left:  1px solid var(--border);
+	margin-left:  10px;
+	padding-left: 10px;
+	color:        var(--text-2);
+}
+
+.hv-char {
+	display: inline-block;
+	width:   1ch;
+	cursor:  default;
+}
+
+/* Fila de cabecera */
+.hv-row-head              { color: var(--text-2); }
+.hv-row-head .hv-byte,
+.hv-row-head .hv-asc      { font-weight: 600; }
+
+/* ── Resaltados ───────────────────────────────────── */
+/* Hover -- fondo suave */
+.hv-hov {
+	background:    var(--accent-bg);
+	color:         var(--accent);
+	border-radius: 2px;
+}
+
+/* Seleccionado con click -- toma precedencia sobre hover */
+.hv-sel {
+	background:    var(--accent);
+	color:         #fff;
+	border-radius: 2px;
+}
+
+/* ── Barra de estado ──────────────────────────────── */
+#hv-bar {
+	display:         flex;
+	align-items:     center;
+	justify-content: space-between;
+	padding:         5px 12px;
+	border-top:      1px solid var(--border);
+	background:      var(--bg);
+	gap:             12px;
+	min-height:      30px;
+}
+
+#hv-status {
+	font-family:   ui-monospace, 'Cascadia Code', monospace;
+	font-size:     11px;
+	color:         var(--text-2);
+	flex:          1;
+	overflow:      hidden;
+	text-overflow: ellipsis;
+	white-space:   nowrap;
+}
+
+#hv-close {
+	flex-shrink: 0;
+	padding:     4px 10px;
+	font-size:   12px;
+	align-self:  auto;
+}

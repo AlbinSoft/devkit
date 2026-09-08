@@ -1,0 +1,19 @@
+#ccase-output {
+	margin-top: 12px;
+}
+
+#ccase-output dd {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#ccase-output code {
+	flex: 1;
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size: 13px;
+}
+
+#ccase-output button {
+	flex-shrink: 0;
+}

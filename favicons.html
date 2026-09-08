@@ -1,0 +1,15 @@
+<form id="favicons-form">
+  <label id="fav-dropzone">
+    <input type="file" id="fav-input" accept="image/*" required>
+    <span id="fav-drop-label">Drop your logo here</span>
+  </label>
+  <label>Site URL<br><input type="url" id="fav-url" placeholder="https://www.example.com/"></label>
+  <label>Icons folder<br><input type="text" id="fav-folder" value="/icons/"></label>
+  <label>Site name<br><input type="text" id="fav-name" placeholder="My Site"></label>
+  <div class="fav-colors">
+    <label>Theme color<br><input type="color" id="fav-theme" value="#ffffff"></label>
+    <label>Background color<br><input type="color" id="fav-bg" value="#ffffff"></label>
+  </div>
+  <button type="submit">Generate icons</button>
+</form>
+<div id="favicons-output"></div>

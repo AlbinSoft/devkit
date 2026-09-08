@@ -1,0 +1,17 @@
+<form id="vmd-form">
+  <label>Markdown<br>
+    <textarea id="vmd-input" rows="10" placeholder="# Hello world"></textarea>
+  </label>
+  <label id="vmd-dropzone" class="disabled">
+    <input type="file" id="vmd-file" accept=".md,.markdown,.txt" disabled>
+    <span id="vmd-drop-label">Loading parser...</span>
+  </label>
+</form>
+
+<div id="vmd-tabs">
+  <button type="button" id="vmd-tab-preview" class="active">Preview</button>
+  <button type="button" id="vmd-tab-html">HTML source</button>
+</div>
+
+<div id="vmd-preview"></div>
+<pre id="vmd-html-source" hidden><code></code></pre>

@@ -1,0 +1,21 @@
+<label id="ish-dropzone">
+  <input type="file" id="ish-input" accept="image/jpeg,image/png,image/webp,image/avif" multiple>
+  <span id="ish-drop-label">Drop images here or click to select</span>
+</label>
+<p id="ish-status"></p>
+<section id="ish-controls" hidden>
+  <h2>Options</h2>
+  <label id="ish-format-wrap">
+    Output format
+    <select id="ish-format">
+      <option value="">Keep original</option>
+      <option value="webp">WebP</option>
+      <option value="avif">AVIF</option>
+    </select>
+  </label>
+  <button type="button" id="ish-shrink">Shrink</button>
+</section>
+<section id="ish-results" hidden>
+  <h2>Results</h2>
+  <div id="ish-list"></div>
+</section>

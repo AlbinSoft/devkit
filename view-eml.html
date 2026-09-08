@@ -1,0 +1,21 @@
+<form>
+  <label id="eml-dropzone" class="disabled">
+    <input type="file" id="eml-input" accept=".eml" disabled>
+    <span id="eml-drop-label">Loading parser…</span>
+  </label>
+</form>
+
+<div id="eml-viewer" hidden>
+  <section>
+    <h2>Headers</h2>
+    <div id="eml-headers"></div>
+  </section>
+  <section>
+    <h2>Message</h2>
+    <div id="eml-body"></div>
+  </section>
+  <section id="eml-attachments-section" hidden>
+    <h2>Attachments</h2>
+    <div id="eml-attachments"></div>
+  </section>
+</div>

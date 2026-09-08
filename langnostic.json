@@ -1,0 +1,2051 @@
+{
+	"": {
+		"en": "",
+		"fr": "",
+		"pt": "",
+		"de": ""
+	},
+	"cart.ajax.adding.freeshipping.gotten": {
+		"en": "You got free shipping!",
+		"fr": "Vous avez la livraison gratuite !",
+		"de": "Sie erhalten kostenlosen Versand!",
+		"pt": "Você obteve envio grátis!"
+	},
+	"cart.ajax.adding.freeshipping.remains": {
+		"en": "%s more for free shipping",
+		"fr": "%s de plus pour la livraison gratuite",
+		"de": "Noch %s für kostenlosen Versand",
+		"pt": "faltam %s para envio grátis"
+	},
+	"cart.ajax.adding.fullcart": {
+		"en": "Full cart",
+		"fr": "Total Panier",
+		"de": "Kompletter Warenkorb",
+		"pt": "Ver Carrinho"
+	},
+	"cart.ajax.adding.nonstop": {
+		"en": "Why stop now?",
+		"fr": "Continuer vos Achats?",
+		"de": "Warum jetzt aufhören?",
+		"pt": "Porque parar agora?"
+	},
+	"cart.ajax.adding.reviewcart": {
+		"en": "Review cart",
+		"fr": "Votre Panier",
+		"de": "Warenkorb bearbeiten",
+		"pt": "Ver Carrinho"
+	},
+	"cart.ajax.adding.title": {
+		"en": "Adding product",
+		"fr": "Ajouter Produit",
+		"de": "Das Produkt wird hinzugefügt",
+		"pt": "A adicionar produto"
+	},
+	"cart.ajax.alert.badrequest": {
+		"en": "Wrong request",
+		"fr": "Wrong request",
+		"de": "Wrong request",
+		"pt": "Wrong request"
+	},
+	"cart.ajax.alert.notadded": {
+		"en": "Unable to add the product (%s)",
+		"fr": "Impossible d'ajouter le produit (%s)",
+		"de": "Das Produkt (%s) konnte nicht hinzugefügt werden",
+		"pt": "Impossível adicionar o produto (%s)"
+	},
+	"cart.ajax.alert.notremoved": {
+		"en": "Unable to remove the product (%s)",
+		"fr": "Impossible de supprimer le produit (%s)",
+		"de": "Das Produkt (%s) kann nicht entfernt werden",
+		"pt": "Impossível remover o produto (%s)"
+	},
+	"cart.ajax.alert.notupdated": {
+		"en": "Unable to modify the product",
+		"fr": "Impossible de modifier le produit",
+		"de": "Das Produkt kann nicht geändert werden",
+		"pt": "Impossível modificar o produto"
+	},
+	"cart.empty": {
+		"en": "Your cart is empty. Visit our store and when you find a product of your interest click <q>Add to cart</q>.",
+		"fr": "Votre panier est vide. Continuez vos achats en cliquant plus bas.",
+		"de": "Ihr Warenkorb ist leer. Besuchen Sie unseren Online-Shop und wenn Sie ein Produkt finden das für Sie interessant ist, klicken Sie <q>Zum Warenkorb hinzufügen</q>.",
+		"pt": "O seu carrinho está vazio. Visite a loja e adicione produtos do seu interesse."
+	},
+	"cart.empty.goshopping": {
+		"en": "Back to shop.",
+		"fr": "Retour à la Boutique.",
+		"de": "Zurück zu Online-Shop",
+		"pt": "Voltar à loja."
+	},
+	"cart.points.applied": {
+		"en": "Discount applied",
+		"fr": "Remise appliquée",
+		"de": "Rabatt angewendet",
+		"pt": "Desconto aplicado"
+	},
+	"cart.points.redeemed": {
+		"en": "Redeemed points",
+		"fr": "Points échangés",
+		"de": "Eingelöste Punkte",
+		"pt": "Pontos resgatados"
+	},
+	"cart.summary.price": {
+		"en": "Price",
+		"fr": "Prix",
+		"de": "Preis",
+		"pt": "Preço"
+	},
+	"cart.summary.product": {
+		"en": "Product",
+		"fr": "Produit",
+		"de": "Produkt",
+		"pt": "Produto"
+	},
+	"cart.summary.quantity": {
+		"en": "Quantity",
+		"fr": "Quantité",
+		"de": "Menge",
+		"pt": "Quantidade"
+	},
+	"cart.summary.remove": {
+		"en": "Remove this item",
+		"fr": "Produit",
+		"de": "Produkt",
+		"pt": "Produto"
+	},
+	"cart.summary.subtotal": {
+		"en": "Subtotal",
+		"fr": "Soustotal",
+		"de": "Teilsumme",
+		"pt": "Subtotal"
+	},
+	"cart.summary.total": {
+		"en": "Total TTC",
+		"fr": "Total TTC",
+		"de": "Gesamt inkl. MwSt.",
+		"pt": "Total com IVA"
+	},
+	"cart.summary.weight": {
+		"en": "Weight",
+		"fr": "Poids",
+		"de": "Gewicht",
+		"pt": "Peso total"
+	},
+	"cart.totals.apply_coupon": {
+		"en": "Apply coupon",
+		"fr": "Appliquer le code promo",
+		"de": "Gutschein einlösen",
+		"pt": "Aplicar cupão"
+	},
+	"cart.totals.coupon": {
+		"en": "Coupon",
+		"fr": "Code promo",
+		"de": "Gutschein",
+		"pt": "Cupão"
+	},
+	"cart.totals.coupon_code": {
+		"en": "Coupon",
+		"fr": "Code promo",
+		"de": "Gutschein",
+		"pt": "Cupão"
+	},
+	"cart.totals.proceed_checkout": {
+		"en": "Proceed to checkout",
+		"fr": "Valider la commande",
+		"de": "Zur Kasse gehen",
+		"pt": "Finalizar compra"
+	},
+	"cart.totals.shipping": {
+		"en": "Shipping",
+		"fr": "Expédition",
+		"de": "Versand",
+		"pt": "Envio"
+	},
+	"cart.totals.subtotal": {
+		"en": "Total",
+		"fr": "Sous-total",
+		"de": "Gesamtbetrag",
+		"pt": "Subtotal"
+	},
+	"cart.totals.total": {
+		"en": "Total",
+		"fr": "Total",
+		"de": "Gesamtbetrag",
+		"pt": "Total"
+	},
+	"checkout.field.agb": {
+		"en": "",
+		"fr": "",
+		"de": "Es gelten unsere <a href=\"/de/allgemeine-geschaeftsbedingungen-und-kundeninformationen/\">AGB</a>",
+		"pt": ""
+	},
+	"checkout.field.agb.error": {
+		"en": "",
+		"fr": "",
+		"de": "Sie müssen die AGB akzeptieren",
+		"pt": ""
+	},
+	"checkout.field.nif": {
+		"en": "TaxID/Passport",
+		"fr": "NIF",
+		"de": "Reisepass",
+		"pt": "NIF (opcional)"
+	},
+	"checkout.sevendays.allfast": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "Receberá todas as unidades em 24-72 horas."
+	},
+	"checkout.sevendays.allslow": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "Receberá todas as unidades no máximo em 7 dias.do nosso depósito espanhol (sem custos adicionais). <span popovertarget=\"shipping_popover\">Mais informações</span>"
+	},
+	"checkout.sevendays.fast": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "Receberá %s unidades em 24-72 horas."
+	},
+	"checkout.sevendays.popover": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "<p>Para garantir o melhor stock disponível, alguns produtos são enviados a partir do nosso armazém central em Espanha.</p><p>Não se preocupe, pois não incorrerá em custos de envio adicionais. No entanto, nestes casos, a entrega da sua encomenda pode demorar até 7 dias.</p>"
+	},
+	"checkout.sevendays.slow": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "O restante chegará no máximo em 7 dias do nosso depósito espanhol (sem custos adicionais). <span popovertarget=\"shipping_popover\">Mais informações</span>"
+	},
+	"checkout.steps.confirmation": {
+		"en": "Confirmation",
+		"fr": "Confirmation",
+		"de": "Bestätigung",
+		"pt": "Confirmação"
+	},
+	"checkout.steps.custinfo": {
+		"en": "Customer information",
+		"fr": "Information client",
+		"de": "Kundeninformation",
+		"pt": "Informação do cliente"
+	},
+	"checkout.steps.payment": {
+		"en": "Payment",
+		"fr": "Paiement",
+		"de": "Zahlung",
+		"pt": "Pagamento"
+	},
+	"comparator.alert.discard": {
+		"en": "Do you really want to discard it?",
+		"fr": "Voulez-vous vraiment vous en débarrasser?",
+		"de": "Wollen Sie das wirklich löschen?",
+		"pt": "Quer mesmo descartá-lo?"
+	},
+	"comparator.button.discard": {
+		"en": "Discard",
+		"fr": "Annuler",
+		"de": "Löschen",
+		"pt": "Descartar"
+	},
+	"comparator.download": {
+		"en": "Download",
+		"fr": "Télécharger",
+		"de": "Herunterladen",
+		"pt": "Download"
+	},
+	"comparator.empty": {
+		"en": "There aren´t products to compare",
+		"fr": "Il n'y a pas de produits à comparer",
+		"de": "Es gibt keine Produkte zum Vergleich",
+		"pt": "Não há produtos para comparar"
+	},
+	"comparator.notification.plural": {
+		"en": "0 products to compare",
+		"fr": "0 produits à comparer",
+		"de": "0 Produkte zum Vergleich",
+		"pt": "0 produtos para comparar"
+	},
+	"comparator.notification.singular": {
+		"en": "0 product to compare",
+		"fr": "0 produit à comparer",
+		"de": "0 Produkt zum Vergleich",
+		"pt": "0 produto para comparar"
+	},
+	"comparator.subtitle.constructive": {
+		"en": "Constructive",
+		"fr": "Constructive",
+		"de": "Constructive",
+		"pt": "Construtivo"
+	},
+	"comparator.subtitle.technical": {
+		"en": "Technical",
+		"fr": "Technical",
+		"de": "Technical",
+		"pt": "Informação Técnica"
+	},
+	"comparator.title": {
+		"en": "Compare",
+		"fr": "Comparer",
+		"de": "Vergleichen",
+		"pt": "Comparar"
+	},
+	"contact.button.send": {
+		"en": "Send",
+		"fr": "Envoyer",
+		"de": "Senden",
+		"pt": "Enviar"
+	},
+	"contact.fback.alert.address": {
+		"en": "Please, fill in the address",
+		"fr": "Veuillez remplir votre adresse",
+		"de": "Bitte geben Sie Ihre Adresse an",
+		"pt": "Por favor, preencha o endereço"
+	},
+	"contact.fback.alert.captcha": {
+		"en": "Sorry, you didn´t pass the captcha",
+		"fr": "Désolé, vous n'avez pas réussi le captcha",
+		"de": "Entschuldigung, das Captcha ist falsch",
+		"pt": "Desculpe, não passou no captcha"
+	},
+	"contact.fback.alert.city": {
+		"en": "Please, fill in your city",
+		"fr": "Veuillez remplir votre ville",
+		"de": "Bitte geben Sie Ihre Stadt an",
+		"pt": "Por favor, preencha sua cidade"
+	},
+	"contact.fback.alert.company": {
+		"en": "Please, fill in your company",
+		"fr": "Veuillez remplir votre société",
+		"de": "Bitte geben Sie Ihren Firmennamen an",
+		"pt": "Por favor, preencha sua empresa"
+	},
+	"contact.fback.alert.country": {
+		"en": "Please, fill in your contry",
+		"fr": "Veuillez remplir votre pays",
+		"de": "Bitte geben Sie Ihr Land an",
+		"pt": "Por favor, preencha seu país"
+	},
+	"contact.fback.alert.email": {
+		"en": "Please, fill in your e-mail",
+		"fr": "Veuillez remplir votre e-mail",
+		"de": "Bitte geben Sie Ihre E-Mail Adresse an",
+		"pt": "Por favor, preencha seu e-mail"
+	},
+	"contact.fback.alert.fullname": {
+		"en": "Please, fill in your name",
+		"fr": "Veuillez remplir votre prénom",
+		"de": "Bitte geben Sie Ihren Nachnamen an",
+		"pt": "Por favor, preencha seu nome"
+	},
+	"contact.fback.alert.message": {
+		"en": "Please, fill in your message",
+		"fr": "Veuillez remplir votre message",
+		"de": "Bitte geben Sie Ihre Nachricht ein",
+		"pt": "Por favor, preencha sua mensagem"
+	},
+	"contact.fback.alert.name": {
+		"en": "Please, fill in your name",
+		"fr": "Veuillez remplir votre prénom",
+		"de": "Bitte geben Sie Ihren Nachnamen an",
+		"pt": "Por favor, preencha seu nome"
+	},
+	"contact.fback.alert.phone": {
+		"en": "Please, fill in your phone number",
+		"fr": "Veuillez remplir votre numéro de téléphone",
+		"de": "Bitte geben Sie Ihre Telefonnummer an",
+		"pt": "Por favor, preencha seu número de telefone"
+	},
+	"contact.fback.alert.pripol": {
+		"en": "Sorry but we need that you accept the privacy policy",
+		"fr": "Désolé, mais vous devez accepter la politique de confidentialité",
+		"de": "Entschuldigung, Sie müssen der Datenschutzerklärung zustimmen",
+		"pt": "Desculpe, mas precisamos que você aceite a política de privacidade"
+	},
+	"contact.fback.alert.surname": {
+		"en": "Please, fill in your surname",
+		"fr": "Veuillez remplir votre nom",
+		"de": "Bitte geben Sie Ihren Vornamen an",
+		"pt": "Por favor, preencha seu sobrenome"
+	},
+	"contact.field.address": {
+		"en": "Address",
+		"fr": "Adresse",
+		"de": "Adresse",
+		"pt": "Morada"
+	},
+	"contact.field.city": {
+		"en": "City",
+		"fr": "Ville",
+		"de": "Stadt",
+		"pt": "Cidade"
+	},
+	"contact.field.company": {
+		"en": "Company",
+		"fr": "Société",
+		"de": "Firma",
+		"pt": "Empresa"
+	},
+	"contact.field.country": {
+		"en": "Country",
+		"fr": "Pays",
+		"de": "Land",
+		"pt": "País"
+	},
+	"contact.field.email": {
+		"en": "E-mail",
+		"fr": "E-mail",
+		"de": "E-mail",
+		"pt": "E-mail"
+	},
+	"contact.field.fullname": {
+		"en": "Fullname",
+		"fr": "Nom",
+		"de": "Name",
+		"pt": "Nome completo"
+	},
+	"contact.field.message": {
+		"en": "Message",
+		"fr": "Message",
+		"de": "Nachricht",
+		"pt": "Mensagem"
+	},
+	"contact.field.name": {
+		"en": "Name",
+		"fr": "Prénom",
+		"de": "Name",
+		"pt": "Nome"
+	},
+	"contact.field.phone": {
+		"en": "Phone number",
+		"fr": "Numéro de téléphone",
+		"de": "Telefonnummer",
+		"pt": "Telefone"
+	},
+	"contact.field.pripol": {
+		"en": "I accept the <a href=\"%s\" target=\"_blank\" title=\"Privacy policy\">privacy policy</a>",
+		"fr": "J’accepte la <a href=\"%s\" target=\"_blank\" title=\"Politique de confidentialité\">politique de confidentialité</a>",
+		"de": "Ich stimme der <a href=\"%s\" target=\"_blank\" title=\"Datenschutzerklärung\">Datenschutzerklärung</a> zu",
+		"pt": "Aceito a <a href=\"%s\" target=\"_blank\" title=\"Política de privacidade\">política de privacidade</a>"
+	},
+	"contact.field.surname": {
+		"en": "Surname",
+		"fr": "Nom",
+		"de": "Vorname",
+		"pt": "Apelido"
+	},
+	"contact.timetable.closed": {
+		"en": "Closed",
+		"fr": "Fermé",
+		"pt": "Fechado",
+		"de": "Geschlossen"
+	},
+	"contact.timetable.fri": {
+		"en": "Friday",
+		"fr": "Vendredi",
+		"pt": "Sexta-feira",
+		"de": "Freitag"
+	},
+	"contact.timetable.mon": {
+		"en": "Monday",
+		"fr": "Lundi",
+		"pt": "Segunda-feira",
+		"de": "Montag"
+	},
+	"contact.timetable.sat": {
+		"en": "Saturday",
+		"fr": "Samedi",
+		"pt": "Sábado",
+		"de": "Samstag"
+	},
+	"contact.timetable.sun": {
+		"en": "Sunday",
+		"fr": "Dimanche",
+		"pt": "Domingo",
+		"de": "Sonntag"
+	},
+	"contact.timetable.thu": {
+		"en": "Thursday",
+		"fr": "Jeudi",
+		"pt": "Quinta-feira",
+		"de": "Donnerstag"
+	},
+	"contact.timetable.tue": {
+		"en": "Tuesday",
+		"fr": "Mardi",
+		"pt": "Terça-feira",
+		"de": "Dienstag"
+	},
+	"contact.timetable.wed": {
+		"en": "Wednesday",
+		"fr": "Mercredi",
+		"pt": "Quarta-feira",
+		"de": "Mittwoch"
+	},
+	"discontinued.empty": {
+		"en": "Sorry, there is no producto that match your criteria",
+		"fr": "Désolés, aucun produit ne correspond à vos critères",
+		"de": "Entschuldigung, kein Produkt entspricht Ihren Kriterien",
+		"pt": ""
+	},
+	"discontinued.field.newname": {
+		"en": "Replacement",
+		"fr": "Remplaçant",
+		"de": "Ersatz",
+		"pt": "Substituição"
+	},
+	"discontinued.field.oldname": {
+		"en": "Name",
+		"fr": "Nom",
+		"de": "Name",
+		"pt": "Nome"
+	},
+	"email.sevendays.slow": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "O restante chegará no máximo em 7 dias do nosso depósito espanhol."
+	},
+	"emails.order.completed.customer.address_billing": {
+		"en": "Billing address",
+		"fr": "Adresse de facturation",
+		"de": "Rechnungsadresse",
+		"pt": "Morada de faturação"
+	},
+	"emails.order.completed.customer.address_shipping": {
+		"en": "Shipping address",
+		"fr": "Adresse de livraison",
+		"de": "Versandadresse",
+		"pt": "Morada de envio"
+	},
+	"emails.order.completed.customer.greetings": {
+		"en": "Hello %s,",
+		"fr": "Halo %s",
+		"de": "Hallo %s",
+		"pt": "Olá %s"
+	},
+	"emails.order.completed.customer.whathappened": {
+		"en": "We have finished processing your order.",
+		"fr": "Nous avons terminé le processus de votre commande.",
+		"de": "Wir haben den Vorgang Ihrer Bestellung abgeschlossen.",
+		"pt": "Concluímos o processamento do seu pedido."
+	},
+	"enclosures.intro": {
+		"en": "This enclosure is suitable for:",
+		"fr": "Ce enceinte est adapté pour:",
+		"de": "Dieser Bausatz eignet sich für",
+		"pt": "Esta caixa é adequada para:"
+	},
+	"enclosures.title": {
+		"en": "Enclosures",
+		"fr": "Enceintes",
+		"de": "Bausätze",
+		"pt": "Caixas Acústicas"
+	},
+	"footer.newsletter.btn.subscribe": {
+		"en": "Subscribe me",
+		"fr": "Abonnez-moi",
+		"de": "Abonnieren",
+		"pt": "Subscreva"
+	},
+	"footer.newsletter.fback.thanks": {
+		"en": "Thanks for your subscription",
+		"fr": "Merci pour votre abonnement",
+		"de": "Vielen Dank für Ihr Abonnement",
+		"pt": "Obrigado pela sua subscrição"
+	},
+	"footer.newsletter.placeholder": {
+		"en": "Write your e-mail",
+		"fr": "Écrivez votre e-mail",
+		"de": "Geben Sie Ihre E-Mail Adresse ein",
+		"pt": "Escreva-nos um e-mail"
+	},
+	"footer.social.title": {
+		"en": "Social meeting points",
+		"fr": "Points de rencontre",
+		"de": "Soziale Medien",
+		"pt": "Ponto de encontro"
+	},
+	"footer.titles.custserv": {
+		"en": "Customer Service",
+		"fr": "Service Client",
+		"de": "Kundenservice",
+		"pt": "Serviço ao cliente"
+	},
+	"footer.titles.keepintouch": {
+		"en": "Keep in touch",
+		"fr": "Restons en contact",
+		"de": "Bleiben Sie in Kontakt",
+		"pt": "Mantenha o contacto"
+	},
+	"footer.titles.moreinfo": {
+		"en": "More info",
+		"fr": "Plus d’Infos",
+		"de": "Weitere Informationen",
+		"pt": "Mais informação"
+	},
+	"footer.titles.newsletter": {
+		"en": "News & Offers",
+		"fr": "Nouveautés & Offres",
+		"de": "Neuheiten & Angebote",
+		"pt": "Novidades & Ofertas"
+	},
+	"footer.titles.newsletter.advice.freedom": {
+		"en": "",
+		"fr": "",
+		"de": "Sie können den Newsletter jederzeit kostenlos abbestellen.",
+		"pt": ""
+	},
+	"footer.titles.resources": {
+		"en": "Resources",
+		"fr": "Ressources",
+		"de": "Ressourcen",
+		"pt": "Recursos"
+	},
+	"footer.widgy.nletter.alert.email": {
+		"en": "Please, fill in your e-mail.",
+		"fr": "Veuillez remplir votre e-mail",
+		"de": "Bitte geben Sie Ihre E-Mail-Adresse an",
+		"pt": "Por favor preencha o seu e-mail"
+	},
+	"footer.widgy.nletter.alert.pripol": {
+		"en": "Sorry, you must accept the privacy policy",
+		"fr": "Désolé, vous devez accepter la politique de confidentialité",
+		"de": "Sie müssen die Datenschutzbestimmungen ankzeptieren",
+		"pt": "Desculpe, deve aceitar a política de privacidade"
+	},
+	"footer.widgy.nletter.fback.ko": {
+		"en": "Mailchimp misconfigured",
+		"fr": "Mailchimp mal configuré",
+		"de": "Mailchimp falsch konfiguriert",
+		"pt": "Mailchimp configurado incorretamente"
+	},
+	"footer.widgy.nletter.fback.ok": {
+		"en": "Thanks for your suscription",
+		"fr": "Merci pour votre abonnement",
+		"de": "Vielen Dank für Ihr Abonnement",
+		"pt": "Obrigado pela sua assinatura"
+	},
+	"header.lit.cart": {
+		"en": "Cart",
+		"fr": "Panier",
+		"de": "Warenkorb",
+		"pt": "Carrinho"
+	},
+	"header.lit.contactus": {
+		"en": "Contact us",
+		"fr": "Nous contacter",
+		"de": "Kontakt",
+		"pt": "Contacte-nos"
+	},
+	"header.lit.myaccount": {
+		"en": "My account",
+		"fr": "Mon compte",
+		"de": "Mein Kundenkonto",
+		"pt": "A minha conta"
+	},
+	"header.lit.signin": {
+		"en": "Sign in",
+		"fr": "Se connecter",
+		"de": "Anmelden",
+		"pt": "Iniciar sessão"
+	},
+	"header.lit.signup": {
+		"en": "Create account",
+		"fr": "Créer votre compte",
+		"de": "Kundenkonto erstellen",
+		"pt": "Crie a sua conta"
+	},
+	"home.prodstrip.bestchoice": {
+		"en": "Best Choice",
+		"fr": "Melleur choix",
+		"de": "Beste Wahl",
+		"pt": "Melhor escolha"
+	},
+	"home.prodstrip.topsellers": {
+		"en": "Top Sellers",
+		"fr": "Melleures ventes",
+		"de": "Meistverkauft",
+		"pt": "Mais vendidos"
+	},
+	"import.downloads.FichTecART": {
+		"en": "Download Technical Sheet",
+		"fr": "Télécharger la Fiche Technique",
+		"de": "Datenblatt herunterladen",
+		"pt": "Descarregar Ficha Técnica"
+	},
+	"lostpassword.intro": {
+		"en": "",
+		"fr": "Indiquez l'e-mail avec lequel vous vous êtes inscrit afin que nous puissions vous envoyer un nouveau mot de passe",
+		"de": "Geben Sie die E-Mail-Adresse ein, mit der Sie sich registriert haben, damit wir Ihnen ein neues Passwort zusenden können.",
+		"pt": "Introduza o endereço de e-mail com o qual se registou para que lhe possamos enviar uma nova palavra-passe."
+	},
+	"myaccount.account.intro": {
+		"en": "The following personal data identifies you as a user in our website.",
+		"fr": "Les données personnelles suivantes vous identifient en tant qu'utilisateur de notre site Web.",
+		"de": "Folgende personenbezogenen Daten identifizieren Sie als Nutzer unserer Website.",
+		"pt": "Consulte os dados da sua ficha de cliente abaixo."
+	},
+	"myaccount.addresses.add": {
+		"en": "",
+		"fr": "Modifier %s",
+		"de": "%s bearbeiten",
+		"pt": "Editar %s"
+	},
+	"myaccount.addresses.billing.changeDEP": {
+		"en": "",
+		"fr": "Modifier Adresse de facturation",
+		"de": "Rechnungsadresse bearbeiten",
+		"pt": "Editar Morada de facturação"
+	},
+	"myaccount.addresses.billing.intro": {
+		"en": "The following billing address will be used on the checkout page by default.",
+		"fr": "L'adresse de facturation suivante sera utilisée par défaut sur la page de paiement..",
+		"de": "Die folgende Rechnungsadresse wird standardmäßig auf der Checkout-Seite verwendet.",
+		"pt": "O seguinte endereço de faturação será utilizado na página de finalização da compra por defeito."
+	},
+	"myaccount.addresses.change": {
+		"en": "",
+		"fr": "Modifier %s",
+		"de": "%s bearbeiten",
+		"pt": "Editar %s"
+	},
+	"myaccount.addresses.default": {
+		"en": "The following addresses will be used on the checkout page by default.",
+		"fr": "L'adresse de facturation suivante sera utilisée par défaut sur la page de paiement.",
+		"de": "Die folgenden Adressen werden standardmäßig auf der Checkout-Seite verwendet",
+		"pt": "Os seguintes endereços serão utilizados na página de checkout por defeito."
+	},
+	"myaccount.addresses.intro": {
+		"en": "The following instructions will be used on the checkout page by default.",
+		"fr": "Les adresses suivantes seront utilisées sur la page de paiement par défaut.",
+		"de": "Die folgenden Adressen werden auf der Standard-Checkout-Seite verwendet.",
+		"pt": "Os seguintes endereços serão utilizados na página de checkout por defeito."
+	},
+	"myaccount.addresses.shipping.changeDEP": {
+		"en": "",
+		"fr": "Modifier Adresse de livraison",
+		"de": "Lieferadresse bearbeiten",
+		"pt": "Editar Morada de envio"
+	},
+	"myaccount.addresses.shipping.intro": {
+		"en": "The following shipping address will be used on the checkout page by default.",
+		"fr": "L'adresse d'expédition suivante sera utilisée par défaut sur la page de paiement.",
+		"de": "Die folgende Envio-Adresse wird standardmäßig auf der Checkout-Seite verwendet.",
+		"pt": "O seguinte endereço de entrega será utilizado na página de finalização da compra por defeito."
+	},
+	"myaccount.lostpassword.islost": {
+		"en": "Lost your password?",
+		"fr": "Lost your password?",
+		"de": "Lost your password?",
+		"pt": "Recuperar senha"
+	},
+	"myaccount.lostpassword.recovery": {
+		"en": "Password recovery",
+		"fr": "Password recovery",
+		"de": "Password recovery",
+		"pt": "Recuperar senha"
+	},
+	"myaccount.mypoints.info": {
+		"en": "You have: <strong>%s</strong> points",
+		"fr": "Vous avez: <strong>%s</strong> points",
+		"de": "Sie haben: <strong>%s</strong> Punkte",
+		"pt": "Tem: <strong>%s</strong> pontos"
+	},
+	"myaccount.mypoints.title": {
+		"en": "My points",
+		"fr": "Mes points",
+		"de": "Meine Punkte",
+		"pt": "Os meus pontos"
+	},
+	"myaccount.mypointshistory.date": {
+		"en": "Date",
+		"fr": "Date",
+		"de": "Date",
+		"pt": "Data"
+	},
+	"myaccount.mypointshistory.ordernum": {
+		"en": "Order Nº",
+		"fr": "Nº de commande",
+		"de": "Bestellnummer",
+		"pt": "Nº do pedido"
+	},
+	"myaccount.mypointshistory.points": {
+		"en": "Points",
+		"fr": "Points",
+		"de": "Punkte",
+		"pt": "Pontos"
+	},
+	"myaccount.mypointshistory.reason": {
+		"en": "Reason",
+		"fr": "Description",
+		"de": "Grund",
+		"pt": "Razão"
+	},
+	"myaccount.mypointshistory.title": {
+		"en": "My Points History",
+		"fr": "Historique de mes Points",
+		"de": "Mein Punkteverlauf",
+		"pt": "O meu histórico de pontos"
+	},
+	"myaccount.orders.actions": {
+		"en": "Actions",
+		"fr": "&nbsp;",
+		"de": "Aktionen",
+		"pt": "&nbsp;"
+	},
+	"myaccount.orders.date": {
+		"en": "Date",
+		"fr": "Date",
+		"de": "Datum",
+		"pt": "Data"
+	},
+	"myaccount.orders.invoice": {
+		"en": "Invoice",
+		"fr": "Facture",
+		"de": "Rechnung",
+		"pt": "Fatura"
+	},
+	"myaccount.orders.number": {
+		"en": "Order",
+		"fr": "Commande",
+		"de": "Order",
+		"pt": "Encomenda"
+	},
+	"myaccount.orders.total": {
+		"en": "Total",
+		"fr": "Total",
+		"de": "Total",
+		"pt": "Total"
+	},
+	"myaccount.title": {
+		"en": "My account",
+		"fr": "Mon compte",
+		"de": "Mein Konto",
+		"pt": "Minha conta"
+	},
+	"plugins.colonyshipping.checkout.notification": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "Para países fora de Portugal, por favor contacte o nosso Serviço de Apoio ao Cliente para saber os custos de envio ao confirmar o seu pedido."
+	},
+	"plugins.domtomshipping.checkout.notification": {
+		"en": "",
+		"fr": "Para os departamentos e territórios ultramarinos franceses, por favor contacte o nosso Serviço de Apoio ao Cliente para saber o custo do transporte ao confirmar o pedido.",
+		"de": "",
+		"pt": "Introduza o endereço de e-mail com o qual se registou para que lhe possamos enviar uma nova palavra-passe."
+	},
+	"product.pvp.dtosimple": {
+		"en": "PVP <em>-%s%%</em>",
+		"fr": "PVP <em>-%s%%</em>",
+		"de": "UVP <em>-%s%%</em>",
+		"pt": "PVP <em>-%s%%</em>"
+	},
+	"product.pvp.dtowithvat": {
+		"en": "PVP <em>-%s%%</em> with VAT",
+		"fr": "PVP <em>-%s%%</em> TTC",
+		"de": "UVP <em>-%s%%</em> inkl. MwSt., zzgl. Versand.",
+		"pt": "PVP <em>-%s%%</em> com IVA"
+	},
+	"product.pvp.simple": {
+		"en": "PVP",
+		"fr": "PVP",
+		"de": "UPV",
+		"pt": "PVP"
+	},
+	"product.pvp.withoutvat": {
+		"en": "PVP without VAT",
+		"fr": "PVP HT",
+		"de": "Preis netto",
+		"pt": "PVP sem IVA"
+	},
+	"product.pvp.withvat": {
+		"en": "PVP with VAT",
+		"fr": "PVP TTC",
+		"de": "UVP inkl. MwSt.",
+		"pt": "PVP com IVA"
+	},
+	"product.widgets.familly.title": {
+		"en": "Familly",
+		"fr": "Famille",
+		"de": "Familie",
+		"pt": "Família"
+	},
+	"product.widgets.price.from": {
+		"en": "From",
+		"fr": "De",
+		"de": "Von",
+		"pt": "De"
+	},
+	"product.widgets.price.title": {
+		"en": "Price",
+		"fr": "Prix",
+		"de": "Preis",
+		"pt": "Preço"
+	},
+	"product.widgets.price.to": {
+		"en": "To",
+		"fr": "Pour",
+		"de": "Bis",
+		"pt": "Até"
+	},
+	"products.feats.brand": {
+		"en": "Brand",
+		"fr": "Marque",
+		"de": "Marke",
+		"pt": "Marca"
+	},
+	"products.feats.ean": {
+		"en": "EAN",
+		"fr": "EAN",
+		"de": "EAN",
+		"pt": "EAN"
+	},
+	"products.feats.mpn": {
+		"en": "MPN",
+		"fr": "MPN",
+		"de": "MPN",
+		"pt": "MPN"
+	},
+	"products.filters.apply": {
+		"en": "Apply",
+		"fr": "Appliquer",
+		"de": "Anwenden",
+		"pt": "Aplicar"
+	},
+	"products.filters.diameter": {
+		"en": "Nominal diameter",
+		"fr": "Diamètre Nominal",
+		"de": "Nominaldurchmesser",
+		"pt": "Diâmetro nominal"
+	},
+	"products.filters.price_asc": {
+		"en": "Price ascending",
+		"fr": "Prix croissant",
+		"de": "Preis aufsteigend",
+		"pt": "Preço ascendente"
+	},
+	"products.filters.price_desc": {
+		"en": "Price descending",
+		"fr": "Prix décroissant",
+		"de": "Preis absteigend",
+		"pt": "Preço descendente"
+	},
+	"products.filters.title": {
+		"en": "Filters",
+		"fr": "Filtres",
+		"de": "Filter",
+		"pt": "Filtros"
+	},
+	"products.list.added": {
+		"en": "Product added",
+		"fr": "Produit ajouté",
+		"de": "Produkt hinzugefögt",
+		"pt": "Produto adicionado"
+	},
+	"products.list.addtocart": {
+		"en": "Add to cart",
+		"fr": "Ajouter au panier",
+		"de": "Zum Warenkorb",
+		"pt": "Adicionar ao carrinho"
+	},
+	"products.list.compare": {
+		"en": "Compare",
+		"fr": "Comparer",
+		"de": "Vergleichen",
+		"pt": "Comparar"
+	},
+	"products.list.empty": {
+		"en": "We are sorry, any product match your criteria.",
+		"fr": "Désolés, aucun produit ne correspond à vos critères.",
+		"de": "Es tut uns Leid, kein Produkt entspricht Ihren Suchkriterien.",
+		"pt": "Pedimos desculpa, nenhum produto corresponde aos seus critérios de pesquisa."
+	},
+	"products.list.found": {
+		"en": "products",
+		"fr": "produits",
+		"de": "Produkte",
+		"pt": "produtos"
+	},
+	"products.list.loading": {
+		"en": "Loading...",
+		"fr": "Loading...",
+		"de": "Laden...",
+		"pt": "A carregar..."
+	},
+	"products.list.quickview": {
+		"en": "Quick view",
+		"fr": "Aperçu rapide",
+		"de": "Übersicht",
+		"pt": "Vista rápida"
+	},
+	"products.list.stock.notenought": {
+		"en": "You can <a href=\"mailto:info@beyma.com\" title=\"contact\">contact us directly</a> to reserve this equipment or to look for an alternative together.",
+		"fr": "Vous pouvez <a href=\"mailto:cgomes@beyma.com\" title=\"contacter\">nous contacter</a> directement pour réserver ce matériel ou chercher ensemble une alternative.",
+		"de": "Sie können <a href=\"mailto:info@beyma.de\" title=\"contact\">uns direkt kontaktieren</a>, um dieses Modell zu reservieren oder gemeinsam nach einer Alternative zu suchen.",
+		"pt": "Pode <a href=\"mailto:info@beyma.com\" title=\"contact\">contactar-nos directamente</a> reservar este equipamento ou procurarmos uma alternativa em conjunto."
+	},
+	"products.offer.dto": {
+		"en": "Disc.",
+		"fr": "",
+		"de": "Rabatt",
+		"pt": "Desconto"
+	},
+	"products.offer.min": {
+		"en": "Min.",
+		"fr": "",
+		"de": "Mindestmenge",
+		"pt": "Mín."
+	},
+	"products.offer.name": {
+		"en": "Offer",
+		"fr": "Offre",
+		"de": "Angebot",
+		"pt": "Oferta"
+	},
+	"products.offer.price": {
+		"en": "Price",
+		"fr": "Prix",
+		"de": "Preis",
+		"pt": "Preço"
+	},
+	"products.offer.pricetax": {
+		"en": "Price",
+		"fr": "Prix TTC",
+		"de": "UVP inkl. MwSt.",
+		"pt": "Preço"
+	},
+	"products.pagesize.all": {
+		"en": "All",
+		"fr": "Tous",
+		"de": "Alle Produkte",
+		"pt": "Todos os Produtos"
+	},
+	"products.pvp.withoutvat": {
+		"en": "with VAT",
+		"fr": "HTT",
+		"de": "zzgl. Versand",
+		"pt": "com IVA"
+	},
+	"products.pvp.withvat": {
+		"en": "with VAT",
+		"fr": "HTT",
+		"de": "inkl. MwSt., zzgl. Versand",
+		"pt": "com IVA"
+	},
+	"products.quickview.added": {
+		"en": "Product added",
+		"fr": "Produit ajouté",
+		"de": "Produkt hinzugefögt",
+		"pt": "Produto adicionado"
+	},
+	"products.quickview.addtocart": {
+		"en": "Add to cart",
+		"fr": "Ajouter au panier",
+		"de": "Zum Warenkorb hinzufügen",
+		"pt": "Adicionar ao carrinho"
+	},
+	"products.replacements.bfrepair": {
+		"en": "BF Repair",
+		"fr": "Réparation BF",
+		"de": "Konusreparatur",
+		"pt": "Reparação"
+	},
+	"products.replacements.drepair": {
+		"en": "Diaphragm repair",
+		"fr": "Réparation diaphragme",
+		"de": "Diaphragmen-Reparatur",
+		"pt": "Reparação de diafragma"
+	},
+	"products.rewards.notification": {
+		"en": "If you purchase this product you will earn {points} {points_label}!",
+		"fr": "Si vous achetez ce produit vous gagnerez {points} {points_label}!",
+		"de": "Wenn Sie dieses Produkt kaufen, werden Ihrem Kundenkonto {points} {points_label} gutgeschrieben",
+		"pt": "Se comprar este produto, ganhará {points} pontos!"
+	},
+	"products.sections.constructives": {
+		"en": "Constructives",
+		"fr": "Constructifs",
+		"de": "Konstruktionsdetails",
+		"pt": "Características Físicas"
+	},
+	"products.sections.downloads": {
+		"en": "Downloads",
+		"fr": "Téléchargements",
+		"de": "Datenblatt",
+		"pt": "Ficheiros para Download"
+	},
+	"products.sections.enclosures": {
+		"en": "Enclosures",
+		"fr": "Enceintes",
+		"de": "Bausätze",
+		"pt": "Caixas"
+	},
+	"products.sections.kit": {
+		"en": "Replacements kit",
+		"fr": "Kit réparation",
+		"de": "Recone-Kit",
+		"pt": "Kit de substituição"
+	},
+	"products.sections.kitfor": {
+		"en": "Replacements kit for",
+		"fr": "Kit réparation de",
+		"de": "Recone-Kit für",
+		"pt": "Kit de substituição para"
+	},
+	"products.sections.related": {
+		"en": "Related products",
+		"fr": "Produits connexes",
+		"de": "Verwandte Produkte",
+		"pt": "Produtos relacionados"
+	},
+	"products.sections.techspecs": {
+		"en": "Technical specifications",
+		"fr": "Caractéristiques Techniques",
+		"de": "Technische Eigenschaften",
+		"pt": "Especificações Técnicas"
+	},
+	"products.sections.thielesmall": {
+		"en": "Thiele &amp; Small",
+		"fr": "Thiele &amp; Small",
+		"de": "Thiele &amp; Small",
+		"pt": "Thiele &amp; Small"
+	},
+	"products.sevendays.moreinfo": {
+		"en": "Estimated delivery: 24 hours to 7 days. <button popovertarget=\"shipping_popover\">More info</button>",
+		"fr": "",
+		"de": "",
+		"pt": "Entrega estimada: de 24 horas a 7 dias. <button popovertarget=\"shipping_popover\">Mais informações</button>"
+	},
+	"products.sevendays.popover": {
+		"en": "",
+		"fr": "",
+		"de": "",
+		"pt": "<p>Para garantir o melhor stock disponível, alguns produtos são enviados a partir do nosso armazém central em Espanha.</p><p>Não se preocupe, pois não incorrerá em custos de envio adicionais. No entanto, nestes casos, a entrega da sua encomenda pode demorar até 7 dias.</p><p>Informaremos o prazo estimado de entrega antes de confirmar o seu pedido.</p>"
+	},
+	"products.shop.title": {
+		"en": "Shop",
+		"fr": "Boutique",
+		"de": "Shop",
+		"pt": "Loja"
+	},
+	"products.stock.backorder": {
+		"en": "On back order",
+		"fr": "",
+		"de": "Lieferung wird erwartet",
+		"pt": "Em encomenda"
+	},
+	"products.stock.instock": {
+		"en": "In stock",
+		"fr": "En Stock",
+		"de": "Lagernd",
+		"pt": "Em stock"
+	},
+	"products.stock.notenought": {
+		"en": "Unfortunately, we do not have enough <q>%s</q> in stock to fulfill your order (availability: %s). Please contact our customer service at <a href=\"mailto:info@beyma.com\" title=\"Contacter\">info@beyma.fr</a> to place a pre-order or to obtain a delivery time at the next availability.",
+		"fr": "Désolé, nous n’avons pas assez de <q>%s</q> en stock pour satisfaire votre commande (disponibilité : %s). Veuillez contacter notre service client sur <a href=\"mailto:info@beyma.fr\" title=\"Contacter\">info@beyma.fr</a> pour passer une pré-commande ou obtenir un délai sur les prochaines disponibilités.",
+		"de": "Leider haben wir nicht genügend <q>%s</q> auf Lager, um Ihre Bestellung zu erfüllen (Verfügbarkeit: %s). Bitte kontaktieren Sie unseren Kundenservice unter <a href=\"mailto:info@beyma.de\" title=\"Contacter\">info@beyma.de</a>, um eine Vorbestellung aufzugeben oder eine Lieferzeit zu erhalten bei der nächsten Verfügbarkeit.",
+		"pt": "Infelizmente, não temos <q>%s</q> suficientes em stock para satisfazer o seu pedido (disponibilidade: %s). Contacte o nosso serviço de apoio ao cliente em <a href=\"mailto:info@beyma.com\" title=\"Contacter\">info@beyma.fr</a> para fazer uma encomenda ou para obter um prazo de entrega na próxima disponibilidade ."
+	},
+	"products.stock.outofstock": {
+		"en": "Out of stock",
+		"fr": "Rupture de Stock",
+		"de": "Nicht lagernd",
+		"pt": "Esgotado"
+	},
+	"products.stock.threshold": {
+		"en": "%s of them will be sent in the next 7 days",
+		"fr": "%s d'entre eux seront envoyés dans les 7 prochains jours",
+		"de": "%s Stück werden innerhalb der nächsten 7 Tage versendet",
+		"pt": "%s deles serão enviados nos próximos 7 dias"
+	},
+	"products.tag.discontinued": {
+		"en": "Product discontinued",
+		"fr": "Produit abandonné",
+		"de": "Produkt ausgelaufen",
+		"pt": "Produto descontinuado"
+	},
+	"products.tag.discount": {
+		"en": "-%s%% off",
+		"fr": "-%s%% off",
+		"de": "-%s%% Rabatt",
+		"pt": "-%s%% de desconto"
+	},
+	"products.tag.offer": {
+		"en": "Offer",
+		"fr": "Offre",
+		"de": "Angebot",
+		"pt": "Oferta"
+	},
+	"products.tag.priceless": {
+		"en": "Price to consult",
+		"fr": "Prix à consulter",
+		"de": "Preis auf Anfrage",
+		"pt": "Preço a consultar"
+	},
+	"products.tag.replacedby": {
+		"en": "New product",
+		"fr": "Nouveau Produit",
+		"de": "Neues Produkt",
+		"pt": "Novo produto"
+	},
+	"products.title": {
+		"en": "Products",
+		"fr": "Produits",
+		"de": "Produkte",
+		"pt": "Produtos"
+	},
+	"products.widgets.discontinued.actives": {
+		"en": "Actives",
+		"fr": "Actifs",
+		"de": "Aktive Modelle",
+		"pt": "Ativos"
+	},
+	"products.widgets.discontinued.all": {
+		"en": "All",
+		"fr": "Tous les produits",
+		"de": "Alle Produkte",
+		"pt": "Tudo"
+	},
+	"products.widgets.discontinued.discontinued": {
+		"en": "Show discontinued",
+		"fr": "Montrer abandonné",
+		"de": "Zeige Auslaufmodelle",
+		"pt": "Mostrar descontinuados"
+	},
+	"pwa.instructions.android.step01": {
+		"en": "",
+		"fr": "Acceda al menú contextual de su navegador",
+		"de": "Öffnen Sie das Menu in Ihrem Browser.",
+		"pt": "Acesse o menu do seu navegador"
+	},
+	"pwa.instructions.android.step02": {
+		"en": "",
+		"fr": "Seleccione <q>Instalar aplicación</q>",
+		"de": "Wählen Sie <q>App installieren</q>",
+		"pt": "Selecione <q>Instalar aplicação</q>"
+	},
+	"pwa.instructions.intro": {
+		"en": "",
+		"fr": "Si un bouton jaune proposant l’installation n’apparait pas ou si rien ne se passe en le cliquant, vous pouvez l’installer manuellement.",
+		"de": "Wenn kein gelber Button mit Installationsangebot angezeigt wird oder beim Anklicken nichts passiert, können Sie die Installation manuell durchführen.",
+		"pt": "Se um botão amarelo oferecendo instalação não aparecer ou se nada acontecer ao clicar nele, você poderá instalá-lo manualmente."
+	},
+	"pwa.instructions.safari.step01": {
+		"en": "",
+		"fr": "Faites un copier/coller sur votre navigateur Safari",
+		"de": "Kopieren Sie den Link und fügen Sie ihn in Ihren Safari-Browser ein",
+		"pt": "Faça um copiar/colar no seu navegador Safari"
+	},
+	"pwa.instructions.safari.step02": {
+		"en": "",
+		"fr": "Accéder au menú inférieur pour partager",
+		"de": "Gehen Sie zum Teilen auf das nachfolgende Menü",
+		"pt": "Aceda ao menu inferior para partilhar"
+	},
+	"pwa.instructions.safari.step03": {
+		"en": "",
+		"fr": "Selectionner <q>Sur l’écran d’accueil</q>",
+		"de": "Wählen Sie <q>Startbildschirm</q>",
+		"pt": "Selecione <q>No Ecrã Principal</q>"
+	},
+	"pwa.intro": {
+		"en": "",
+		"fr": "Installez notre application depuis cette page pour avoir les données à portée de main.",
+		"de": "Installieren Sie unsere App von dieser Seite aus, um die Daten immer zur Hand zu haben.",
+		"pt": "Instale a nossa aplicação a partir desta página para ter os dados ao seu alcance."
+	},
+	"pwa.status.dismissed": {
+		"en": "Dismissed",
+		"fr": "Rechazada :(",
+		"de": "Abgetan",
+		"pt": "Dispensada"
+	},
+	"pwa.status.installapp": {
+		"en": "Install",
+		"fr": "Instalar APP",
+		"de": "Installieren",
+		"pt": "Instalar"
+	},
+	"pwa.status.installed": {
+		"en": "Installed",
+		"fr": "Instalada :)",
+		"de": "Installiert",
+		"pt": "Instalada"
+	},
+	"pwa.status.unavailable": {
+		"en": "Unavailable",
+		"fr": "Installation impossible",
+		"de": "Installation unmöglich",
+		"pt": "Indisponível"
+	},
+	"register.btn.signin": {
+		"en": "Log in",
+		"fr": "Se connecter",
+		"de": "Anmelden",
+		"pt": "Identificar-se"
+	},
+	"register.btn.signup": {
+		"en": "Sign up",
+		"fr": "Créer un compte",
+		"de": "Konto erstellen",
+		"pt": "Registar-se"
+	},
+	"register.created.intro": {
+		"en": "Now you can <a href=\"%s\" title=\"Shop\">visit our shop</a> or <a href=\"%s\" title=\"Private area\">go to your private area</a>.",
+		"fr": "Maintenant vous pouvez <a href=\"%s\" title=\"Boutique\">visiter notre boutique</a> ou <a href=\"%s\" title=\"Private area\">vous rendre dans votre espace privé.",
+		"de": "Sie können nun <a href=\"%s\" title=\"Shop\">den Shop besuchen</a> oder <a href=\"%s\" title=\"Private area\">Ihre Benutzerdaten ansehen</a>.",
+		"pt": "<a href=\"%s\" title=\"Loja\">Visite a nossa loja</a> ou <a href=\"%s\" title=\"Área privada\">consulte a sua área privada</a>."
+	},
+	"register.created.title": {
+		"en": "Your registration has been completed successfully. You will receive an e-mail confirming your access data.",
+		"fr": "Votre inscription a été réalisée avec succès.<!-- Vous recevrez un e-mail confirmant vos données d’accès.-->",
+		"de": "Ihre Registrierung war erfolgreich. Sie erhalten eine Bestätigung Ihrer Daten per E-Mail.",
+		"pt": "O seu registo foi concluído com sucesso.<!-- Você receberá um e-mail confirmando os seus dados de acesso.-->"
+	},
+	"register.fback.alert.captcha": {
+		"es": "Lo siento, no resolviste correctamente el reto del captcha",
+		"en": "",
+		"fr": "Désolé, vous n’avez pas résolu correctement le défi captcha",
+		"de": "Ups, das Captcha wurde nicht korrekt gelöst",
+		"pt": "Desculpe, não resolveu o desafio do captcha correctamente."
+	},
+	"register.fback.alert.duplicated": {
+		"en": "That e-mail is already in use.",
+		"fr": "Cet e-mail est déjà utilisé.",
+		"de": "Diese E-Mail ist bereits vergeben.",
+		"pt": "Esse e-mail já está em uso."
+	},
+	"register.fback.alert.firstname": {
+		"en": "Please fill in your first name",
+		"fr": "Veuillez remplir votre prénom",
+		"de": "Bitte geben Sie Ihren Vornamen ein",
+		"pt": "Por favor, preencha o seu nome"
+	},
+	"register.fback.alert.lastname": {
+		"en": "Please fill in your last name",
+		"fr": "Veuillez remplir votre nom de famille",
+		"de": "Bitte geben Sie Ihren Nachnamen ein",
+		"pt": "Por favor, preencha o seu sobrenome"
+	},
+	"register.fback.alert.nocreated": {
+		"en": "Sorry, there was a problem creating the user",
+		"fr": "Désolé, un problème est survenu lors de la création de l'utilisateur",
+		"de": "Entschuldigung, es ist ein Problem aufgetreten und Ihr Konto konnte nicht erstellt werden",
+		"pt": "Desculpe, houve um problema ao criar o utilizador"
+	},
+	"register.fback.alert.passnotmatch": {
+		"en": "Sorry, both password doesn´t match",
+		"fr": "Désolé, les mots de passe ne correspondent pas",
+		"de": "Entschuldigung, die beiden Passwörter stimmen nicht überein.",
+		"pt": "Desculpe, as senhas não correspondem"
+	},
+	"register.fback.alert.password": {
+		"en": "Please, fill in your password",
+		"fr": "Veuillez remplir votre mot de passe",
+		"de": "Bitte geben Sie Ihr Passwort ein.",
+		"pt": "Por favor, preencha a sua senha"
+	},
+	"register.fback.alert.passwritetwice": {
+		"en": "Please, write twice your password",
+		"fr": "Confirmez le mot de passe",
+		"de": "Bitte bestätigen Sie Ihr Passwort.",
+		"pt": "Por favor, escreva a sua senha novamente"
+	},
+	"register.fback.alert.pripol": {
+		"en": "Sorry, you must accept the privacy policy",
+		"fr": "Désolé, vous devez accepter la politique de confidentialité",
+		"de": "Entschuldigung, Sie müssen der Datenschutzerklärung zustimmen",
+		"pt": "Desculpe, você deve aceitar a política de privacidade"
+	},
+	"register.fback.alert.useremail": {
+		"en": "Please, fill in your e-mail",
+		"fr": "Veuillez remplir votre e-mail",
+		"de": "Bitte geben Sie Ihre E-Mail Adresse an.",
+		"pt": "Por favor, preencha o seu e-mail"
+	},
+	"register.fback.alert.username": {
+		"en": "Please, fill in your name",
+		"fr": "Veuillez remplir votre nom",
+		"de": "Bitte geben Sie Ihren Namen an.",
+		"pt": "Por favor, preencha o seu nome."
+	},
+	"register.field.email": {
+		"en": "E-mail",
+		"fr": "E-mail",
+		"de": "E-mail",
+		"pt": "E-mail"
+	},
+	"register.field.firstname": {
+		"en": "First name",
+		"fr": "Prénom",
+		"de": "Vorname",
+		"pt": "Nome"
+	},
+	"register.field.lastname": {
+		"en": "Last name",
+		"fr": "Nom de famille",
+		"de": "Nachname",
+		"pt": "Sobrenome"
+	},
+	"register.field.name": {
+		"en": "Name",
+		"fr": "Prénom",
+		"de": "Name",
+		"pt": "Nome"
+	},
+	"register.field.nletter": {
+		"en": "Subscribe to the newsletter",
+		"fr": "Abonnez-vous à la newsletter",
+		"de": "Abonnieren Sie den Newsletter. Sie können den Newsletter jederzeit kostenlos abbestellen.",
+		"pt": "Subscrever a newsletter"
+	},
+	"register.field.nletterpoints": {
+		"en": "Subscribe to the newsletter and earn 10 points by our fidelity program",
+		"fr": "Souscrivez à notre Newsletter et gagnez 10 points dans notre programme Fidélité.",
+		"de": "Abonnieren Sie den Newsletter und erhalten Sie 10 Punkte für unser Bonusprogramm. Sie können den Newsletter jederzeit kostenlos abbestellen.",
+		"pt": "Subscreva a newsletter e ganhe pontos de fidelização"
+	},
+	"register.field.password": {
+		"en": "Password",
+		"fr": "Mot de passe",
+		"de": "Passwort",
+		"pt": "Password"
+	},
+	"register.field.pripol": {
+		"en": "I accept the <a href=\"%s\" target=\"_blank\" title=\"Privacy policy\">privacy policy</a>",
+		"fr": "J’accepte la <a href=\"%s\" target=\"_blank\" title=\"Politique de confidentialité\">politique de confidentialité</a>",
+		"de": "Ich stimme der <a href=\"%s\" target=\"_blank\" title=\"Datenschutzerklärung\">Datenschutzerklärung</a> zu.",
+		"pt": "Declaro que aceito <a href=\"%s\" target=\"_blank\" title=\"Privacy policy\">política de privacidade</a>"
+	},
+	"register.field.repeatit": {
+		"en": "Repeat it",
+		"fr": "Confirmez le mot de passe",
+		"de": "Bestätigen Sie Ihr Passwort",
+		"pt": "Confirmar a Password"
+	},
+	"register.field.tracknum": {
+		"en": "",
+		"fr": "",
+		"de": "Informationen zum <a href=\"/de/widerrufsrecht-fuer-verbraucher/\">Widerruf</a>",
+		"pt": ""
+	},
+	"register.mail.subject": {
+		"en": "Welcome to our online shop Beyma France",
+		"fr": "Bienvenue sur Beyma France",
+		"de": "Willkommen auf Beyma.de",
+		"pt": "Bem-vindo Beyma Portugal"
+	},
+	"register.title": {
+		"en": "Sign up",
+		"fr": "Créer un compte",
+		"de": "Konto erstellen",
+		"pt": "Registar-se"
+	},
+	"rma.alert.captcha": {
+		"en": "Sorry but you didn´t solve the captcha correctly.",
+		"fr": "Désolé mais vous n'avez pas résolu le captcha correctement",
+		"de": "Leider haben Sie das Captcha nicht richtig gelöst",
+		"pt": "Desculpe, mas não resolveu o captcha correctamente."
+	},
+	"rma.alert.generic": {
+		"en": "Please, fill in this field.",
+		"fr": "Veuillez remplir ce champ.",
+		"de": "Bitte füllen Sie dieses Feld aus",
+		"pt": "Por favor preencha este campo."
+	},
+	"rma.alert.lopd": {
+		"en": "Sorry, you must accept the privacy policy",
+		"fr": "Désolé, vous devez accepter la politique de confidentialité",
+		"de": "Sorry, Sie müssen die Datenschutzbestimmungen akzeptieren",
+		"pt": "Desculpe, deve aceitar a política de privacidade"
+	},
+	"rma.alert.ordernotfound": {
+		"en": "Order not found",
+		"fr": "Commande introuvable",
+		"de": "Bestellung nicht gefunden",
+		"pt": "Pedido não encontrado"
+	},
+	"rma.alert.problem": {
+		"en": "Please, describe the problem",
+		"fr": "Veuillez décrire le problème",
+		"de": "Bitte beschreiben Sie das Problem",
+		"pt": "Por favor, descreva o problema"
+	},
+	"rma.alert.productnotfound": {
+		"en": "Product not found",
+		"fr": "Produit non trouvé",
+		"de": "Produkt nicht gefunden",
+		"pt": "Produto não encontrado"
+	},
+	"rma.alert.quantity": {
+		"en": "Please, fill in the quantity",
+		"fr": "Veuillez remplir la quantité",
+		"de": "Bitte geben Sie die Menge ein",
+		"pt": "Por favor preencha a quantidade"
+	},
+	"rma.alert.reason": {
+		"en": "Please, select the reason",
+		"fr": "Veuillez s’electionner le motif",
+		"de": "Bitte wählen Sie den Grund aus",
+		"pt": "Por favor selecione o motivo"
+	},
+	"rma.fback.thanks": {
+		"en": "Thanks for contacting us. We will answer you as soon as possible",
+		"fr": "Merci de nous avoir contacté. Nous vous contacterons dans les plus brefs délais.",
+		"de": "Vielen Dank, dass Sie mit uns Kontakt aufgenommen haben. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen",
+		"pt": "Obrigado por entrar em contacto connosco. Entraremos em contacto consigo o mais breve possível."
+	},
+	"rma.field.uploads1": {
+		"es": "Para una mejor explicación del problema puedes subir los documentos que consideres (fotos, esquemas, factura de compra, etc&hellip;) pulsando el símbolo <q>+</q>.",
+		"en": "",
+		"fr": "Pour mieux expliquer du problème veuillez nous fournir tout document que vous jugerez pertinent (photos, schémas, facture d'achat, etc...). Télechargez en clicquant sur le symbole clip.",
+		"de": "Um das Problem besser zu erklären, stellen Sie uns bitte alle Dokumente zur Verfügung, die Sie für relevant halten (Fotos, Diagramme, Kaufrechnung usw.). Zum Herunterladen klicken Sie bitte auf das Clip-Symbol",
+		"pt": "Para explicar melhor o problema, forneça-nos quaisquer documentos que considere relevantes (fotos, diagramas, fatura de compra, etc.)."
+	},
+	"rma.field.uploads2": {
+		"es": "Te recordamos que en caso de reparación en garantía, será necesaria la factura de compra correspondiente.",
+		"en": "",
+		"fr": "Nous vous rappelons qu'en cas de réparation sous garantie, la facture d'achat correspondante sera nécessaire.",
+		"de": "Wir erinnern Sie daran, dass im Falle einer Garantiereparatur die entsprechende Kaufrechnung erforderlich ist",
+		"pt": ""
+	},
+	"rma.fields.problem": {
+		"en": "Description of the problem",
+		"fr": "Description du problème",
+		"de": "Beschreibung des Problems",
+		"pt": "Descrição do problema"
+	},
+	"rma.fields.problemph": {
+		"en": "Please, describe the problem with all kind of details",
+		"fr": "Veuillez décrire le problème avec un maximum de détails",
+		"de": "Bitte beschreiben Sie das Problem so detailliert wie möglich",
+		"pt": "Por favor, descreva o problema com o máximo de detalhes possível"
+	},
+	"rma.fields.quantity": {
+		"en": "Quantity",
+		"fr": "Quantité",
+		"de": "Menge",
+		"pt": "Quantidade"
+	},
+	"rma.fields.reason": {
+		"en": "Reason",
+		"fr": "Raison",
+		"de": "Grund",
+		"pt": "Motivo"
+	},
+	"rma.intro": {
+		"en": "We are sorry that you have had any problems with our product. We will try to solve it quickly. To do this, please fill out an RMA for each of the items you need to send for review, once sent, we will contact you to authorize the shipment of the merchandise to our facilities. To avoid loss of material, you should not send any material that has not been previously authorized for shipment by us.",
+		"fr": "Nous sommes désolés des problèmes rencontrés avec notre produit. Nous mettons tout en oeuvre pour vous apporter une solution rapidement. Pour ce faire, veuillez remplir un RMA pour chacun des articles concernés et nous l’envoyer pour examen. Des réception, nous vous contacterons pour autoriser le retour de la marchandise dans nos locaux. Seuls les produits préalablement autorisés par nos services, doivent nous être expediés.",
+		"de": "Wir entschuldigen uns für die Probleme, die mit unserem Produkt aufgetreten sind. Wir tun alles, was wir können, um Ihnen schnell eine Lösung zu bieten. Hierzu füllen Sie bitte ein RMA-Formular für jeden der betroffenen Artikel aus und senden es zur Überprüfung an uns. Nach Erhalt werden wir uns mit Ihnen in Verbindung setzen, um die Rücksendung der Ware an uns zu planen. Es sollten nur Produkte zu uns geschickt werden, deren Einsendung wir zuvor geprüft haben.",
+		"pt": "Lamentamos que tenha tido algum problema com o nosso produto. Tentaremos resolver isso rapidamente. Para tal, preencha um RMA para cada um dos artigos que pretende enviar para análise, uma vez enviado entraremos em contacto consigo para autorizar o envio da mercadoria para as nossas instalações. Para evitar a perda de material, não deve enviar qualquer material que não tenha sido previamente autorizado para envio por nós."
+	},
+	"rma.intro.choosen": {
+		"en": "You have selected <strong>%s</strong>",
+		"fr": "Vous avez sélectionné <strong>%s</strong>",
+		"de": "Sie haben die Option <strong>% s</strong> gewählt",
+		"pt": "Você selecionou <strong>%s</strong>"
+	},
+	"rma.list.empty": {
+		"en": "You don´t have any open issue",
+		"fr": "Aucun Dossier Ouvert.",
+		"de": "Sie haben keine offenen Fragen",
+		"pt": "Não tem nenhum problema em aberto"
+	},
+	"rma.list.header": {
+		"en": "Issue <span class=\"rma_idissue\">%s</span> open on <span class=\"rma_date\">%s</span>",
+		"fr": "Issue <span class=\"rma_idissue\">%s</span> open on <span class=\"rma_date\">%s</span>",
+		"de": "Problem <span class=\"rma_idissue\">%s</span>, geöffnet am <span class=\"rma_date\">%s</span>",
+		"pt": "Problema <span class=\"rma_idissue\">%s</span> aberto em <span class=\"rma_date\">%s</span>"
+	},
+	"rma.list.order.field": {
+		"en": "Order",
+		"fr": "Order",
+		"de": "Bestellung",
+		"pt": "Pedido"
+	},
+	"rma.list.order.value": {
+		"en": "<span class=\"rma_idissue\">%s</span> made on <span class=\"rma_date\">%s</span>",
+		"fr": "<span class=\"rma_idissue\">%s</span> made on <span class=\"rma_date\">%s</span>",
+		"de": "<span class=\"rma_idissue\">%s</span> erstellt am <span class=\"rma_date\">%s</span>",
+		"pt": "<span class=\"rma_idissue\">%s</span> feito em <span class=\"rma_date\">%s</span>"
+	},
+	"rma.list.product.field": {
+		"en": "Product",
+		"fr": "Produit",
+		"de": "Produkt",
+		"pt": "Produto"
+	},
+	"rma.list.status.closed": {
+		"en": "Closed",
+		"fr": "xxxxxxxxxx",
+		"de": "Geschlossen",
+		"pt": "Fechado"
+	},
+	"rma.list.status.open": {
+		"en": "Open",
+		"fr": "xxxxxxxxxx",
+		"de": "Geöffnet",
+		"pt": "Aberto"
+	},
+	"rma.status.accepted": {
+		"en": "Accepted",
+		"fr": "Accepté",
+		"de": "Akzeptiert",
+		"pt": "Aceite"
+	},
+	"rma.status.declined": {
+		"en": "Declined",
+		"fr": "Refusé",
+		"de": "Abgelehnt",
+		"pt": "Rejeitado"
+	},
+	"rma.status.pending": {
+		"en": "Pending",
+		"fr": "En attente",
+		"de": "In Erwartung",
+		"pt": "Em espera"
+	},
+	"rma.status.received": {
+		"en": "Received",
+		"fr": "Reçu",
+		"de": "Erhalten",
+		"pt": "Recebido"
+	},
+	"rma.status.sent": {
+		"en": "Sent",
+		"fr": "Expédié",
+		"de": "Versendet",
+		"pt": "Enviado"
+	},
+	"rma_admin.damage.title": {
+		"en": "Damage",
+		"fr": "Dommages",
+		"de": "Schäden",
+		"pt": "Danos"
+	},
+	"rma_admin.info.isopen": {
+		"en": "Open",
+		"fr": "Ouvert",
+		"de": "Offen",
+		"pt": "Aberto"
+	},
+	"rma_admin.info.openat": {
+		"en": "Open date",
+		"fr": "Date d'ouverture",
+		"de": "Eröffnungsdatum",
+		"pt": "Data de abertura"
+	},
+	"rma_admin.info.ordernum": {
+		"en": "Order",
+		"fr": "Commande",
+		"de": "Bestellung",
+		"pt": "Pedido"
+	},
+	"rma_admin.info.product": {
+		"en": "Product",
+		"fr": "Produit",
+		"de": "Produkt",
+		"pt": "Produto"
+	},
+	"rma_admin.info.quantity": {
+		"en": "Quantity",
+		"fr": "Quantité",
+		"de": "Menge",
+		"pt": "Quantidade"
+	},
+	"rma_admin.info.reason": {
+		"en": "Reason",
+		"fr": "Raison",
+		"de": "Grund",
+		"pt": "Razão"
+	},
+	"rma_admin.info.status": {
+		"en": "Status",
+		"fr": "Statut",
+		"de": "Status",
+		"pt": "Status"
+	},
+	"rma_admin.info.title": {
+		"en": "Information",
+		"fr": "Informations",
+		"de": "Informationen",
+		"pt": "Informações"
+	},
+	"rma_admin.info.username": {
+		"en": "User",
+		"fr": "Utilisateur",
+		"de": "Benutzer",
+		"pt": "Usuário"
+	},
+	"rma_admin.notes.internal": {
+		"en": "Internal notes",
+		"fr": "Internal notes",
+		"de": "Interne Notizen",
+		"pt": "Internal notas"
+	},
+	"rma_admin.notes.public": {
+		"en": "Message for the user",
+		"fr": "Message pour l'utilisateur",
+		"de": "Nachricht an den Nutzer",
+		"pt": "Mensagem para o usuário"
+	},
+	"rma_admin.notes.save": {
+		"en": "Save",
+		"fr": "Enregistrer",
+		"de": "Speichern",
+		"pt": "Salvar"
+	},
+	"rma_admin.notes.title": {
+		"en": "Notes",
+		"fr": "Notes",
+		"de": "Notizen",
+		"pt": "Notas"
+	},
+	"rma_admin.status.accept": {
+		"en": "Accept case",
+		"fr": "Accepter le dossier",
+		"de": "Fall akzeptieren",
+		"pt": "Aceitar caso"
+	},
+	"rma_admin.status.closeit": {
+		"en": "Close case",
+		"fr": "Fermer le dossier",
+		"de": "Fall schließen",
+		"pt": "Fechar caso"
+	},
+	"rma_admin.status.gotten": {
+		"en": "Received material",
+		"fr": "Matériel reçu",
+		"de": "Erhaltenes Material",
+		"pt": "Material recebido"
+	},
+	"rma_admin.status.isopen": {
+		"en": "Open status",
+		"fr": "Statut ouvert",
+		"de": "Offener Status",
+		"pt": "Status aberto"
+	},
+	"rma_admin.status.openit": {
+		"en": "Open case",
+		"fr": "Ouvrir le dossier",
+		"de": "Fall öffnen",
+		"pt": "Abrir caso"
+	},
+	"rma_admin.status.reject": {
+		"en": "Deny case",
+		"fr": "Refuser le dossier",
+		"de": "Fall ablehnen",
+		"pt": "Negar caso"
+	},
+	"rma_admin.status.sent": {
+		"en": "Sent material",
+		"fr": "Matériel envoyé",
+		"de": "Material gesendet",
+		"pt": "Material enviado"
+	},
+	"rma_admin.status.status": {
+		"en": "Status",
+		"fr": "Statut",
+		"de": "Status",
+		"pt": "Status"
+	},
+	"rma_admin.status.title": {
+		"en": "Case status",
+		"fr": "Statut du dossier",
+		"de": "Fallstatus",
+		"pt": "Status do caso"
+	},
+	"search.bc.title": {
+		"en": "Results for search",
+		"fr": "Résultats de la recherche",
+		"de": "Suchergebnisse",
+		"pt": "Resultados da pesquisa"
+	},
+	"search.noresults": {
+		"en": "No results so far, sorry",
+		"fr": "Aucun résultat pour le moment, désolé",
+		"de": "Kein Ergebnis gefunden",
+		"pt": "Nenhum resultado até agora, desculpe"
+	},
+	"search.placeholder": {
+		"en": "Search...",
+		"fr": "Rechercher...",
+		"de": "Suche...",
+		"pt": "Procurar..."
+	},
+	"search.tag.discontinued": {
+		"en": "Discontinued",
+		"fr": "Abandonné",
+		"de": "Abgesetzt",
+		"pt": "Descontinuado"
+	},
+	"search.title": {
+		"en": "Search",
+		"fr": "Rechercher",
+		"de": "Suche",
+		"pt": "Procurar"
+	},
+	"singleproduct.addtocart.suffix_net": {
+		"en": "!VAT",
+		"fr": "HT",
+		"de": "Netto",
+		"pt": "sem IVA"
+	},
+	"singleproduct.addtocart.suffix_tax": {
+		"en": "VAT",
+		"fr": "TTC",
+		"de": "inkl. MwSt.",
+		"pt": "com IVA"
+	},
+	"social.followus.facebook": {
+		"en": "Follow us in Facebook",
+		"fr": "Suivez-nous sur Facebook",
+		"de": "Folgen Sie uns auf Facebook",
+		"pt": "Siga-nos no Facebook"
+	},
+	"social.followus.goodreads": {
+		"en": "Follow us in GoodReads",
+		"fr": "Suivez-nous sur GoodReads",
+		"de": "Folgen Sie uns auf GoodReads",
+		"pt": "Siga-nos no GoodReads"
+	},
+	"social.followus.instagram": {
+		"en": "Follow us in Instagram",
+		"fr": "Suivez-nous sur Instagram",
+		"de": "Folgen Sie uns auf Instagram",
+		"pt": "Siga-nos no Instagram"
+	},
+	"social.followus.linkedin": {
+		"en": "Follow us in LinkedIn",
+		"fr": "Suivez-nous sur LinkedIn",
+		"de": "Folgen Sie uns auf LinkedIn",
+		"pt": "Siga-nos no LinkedIn"
+	},
+	"social.followus.pinterest": {
+		"en": "Follow us in Pinterest",
+		"fr": "Suivez-nous sur Pinterest",
+		"de": "Folgen Sie uns auf Pinterest",
+		"pt": "Siga-nos no Pinterest"
+	},
+	"social.followus.tweeter": {
+		"en": "Follow us in Tweeter",
+		"fr": "Suivez-nous sur Tweeter",
+		"de": "Folgen Sie uns auf Twitter",
+		"pt": "Siga-nos no Tweeter"
+	},
+	"social.followus.youtube": {
+		"en": "Follow us in Youtube",
+		"fr": "Suivez-nous sur Youtube",
+		"de": "Folgen Sie uns auf Youtube",
+		"pt": "Siga-nos no Youtube"
+	},
+	"ssawareness.cart.checkbox": {
+		"en": "",
+		"fr": "J'accepte l'envoi partiel des %s unités dans les 24 à 72 heures et le reste dans les sept jours.",
+		"de": "Ich akzeptiere eine Teillieferung von %s Einheiten in den nächsten 24 bis 72 Stunden und den Rest in den nächsten 7 Tagen.",
+		"pt": "Aceito a remessa parcial de %s unidades nas próximas 24 a 72 horas e o restante nos próximos 7 dias."
+	},
+	"ssawareness.cart.checkboxbis": {
+		"en": "I accept that the order will be delivered within 7 days.",
+		"fr": "J'accepte que la commande soit livrée sous sept jours.",
+		"de": "Ich akzeptiere, dass die Bestellung innerhalb von 7 Tagen geliefert wird.",
+		"pt": "Aceito que o pedido seja entregue em até 7 dias."
+	},
+	"ssawareness.emails.note": {
+		"en": "",
+		"fr": "%s %s envoyés dans les prochains 24-72 heures, %s seront envoyés dans les 7 prochains jours",
+		"de": "%s %s Gesandte innerhalb von 24-72 Stunden, %s werden Gesandte innerhalb von 7 nächsten Stunden sein",
+		"pt": "%s %s enviados nas próximas 24 a 72 horas, %s serão enviados nas próximas 7 dias"
+	},
+	"stocknotification.action.send": {
+		"en": "Let me know",
+		"fr": "Fais-moi savoir",
+		"de": "Lass es mich wissen",
+		"pt": "Avise"
+	},
+	"stocknotification.altway": {
+		"en": "x",
+		"fr": "Vous pouvez nous <a href=\"mailto:info@beyma.fr\" title=\"contacter\">contacter</a> directement pour réserver ce matériel ou chercher ensemble une alternative.",
+		"de": "Sie können <a href=\"mailto:info@beyma.de\" title=\"contacter\">uns direkt kontaktieren</a>, um diese Ausrüstung zu reservieren oder gemeinsam nach einer Alternative zu suchen.",
+		"pt": "Pode <a href=\"mailto:portugal@beyma.eu\" title=\"contacter\">contactar-nos</a> diretamente para reservar este equipamento ou procurar uma alternativa em conjunto."
+	},
+	"stocknotification.feedback": {
+		"en": "Thanks a lot. We will answer you as soon as possible.",
+		"fr": "Merci beaucoup. Nous vous contacterons sous peu.",
+		"de": "Vielen Dank. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.",
+		"pt": "Muito obrigado. Responderemos o mais breve possível."
+	},
+	"stocknotification.field.email": {
+		"en": "E-mail",
+		"fr": "E-mail",
+		"de": "E-mail",
+		"pt": "E-mail"
+	},
+	"stocknotification.field.pripol": {
+		"en": "I accept the <a href=\"%s\" target=\"_blank\" title=\"Privacy Policy\">privacy policy</a>",
+		"fr": "J’accepte la <a href=\"%s\" target=\"_blank\" title=\"Politique de confidentialité\">politique de confidentialité</a>",
+		"de": "Ich habe die <a href=\"%s\" target=\"_blank\" title=\"Datenschutzerklärung\">Datenschutzerklärung</a> zur Kenntnis genommen.",
+		"pt": "Aceito a <a href=\"%s\" target=\"_blank\" title=\"Política de Privacidade\">política de privacidade</a>"
+	},
+	"stocknotification.intro": {
+		"en": "x",
+		"fr": "Devons-nous vous informer dès qu'il y a du stock?",
+		"de": "Müssen wir Sie informieren, sobald der Vorrat verfügbar ist?",
+		"pt": "Devemos informá-lo assim que houver stock?"
+	},
+	"stocknotification.invalid.email": {
+		"en": "Please, fill in your e-mail",
+		"fr": "Veuillez remplir votre e-mail",
+		"de": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+		"pt": "Por favor preencha o seu e-mail"
+	},
+	"stocknotification.invalid.pripol": {
+		"en": "Sorry, you must accept the privacy policy",
+		"fr": "Désolé, mais vous devez accepter la politique de confidentialité",
+		"de": "Entschuldigung, aber Sie müssen die Datenschutzbestimmungen akzeptieren",
+		"pt": "Desculpe, deve aceitar a política de privacidade"
+	},
+	"stripe_prods.seemore": {
+		"en": "See more",
+		"fr": "Voir mes",
+		"de": "Mehr sehen",
+		"pt": "Ver mais"
+	},
+	"thankyou.confirmation": {
+		"en": "xxxxxxxxxx",
+		"fr": "Merci. Votre commande a été reçue. Vous recevrez un message de confirmation sur votre email.",
+		"de": "Danke. Ihre Bestellung wurde empfangen. Sie erhalten eine Bestätigung per E-Mail.",
+		"pt": "Obrigado pelo seu pedido. Receberá uma mensagem de confirmação no seu e-mail."
+	},
+	"videos.empty": {
+		"en": "There are no videos that match your search",
+		"fr": "Il n'y a aucune vidéo correspondant à votre recherche",
+		"de": "Es gibt keine Videos, die zu Ihrer Suche passen",
+		"pt": "Não há vídeos que correspondam à sua pesquisa"
+	},
+	"videos.search": {
+		"en": "What are you looking for?",
+		"fr": "Que recherchez-vous?",
+		"de": "Wonach suchen Sie?",
+		"pt": "O que está a procura?"
+	},
+	"warranty.field.code": {
+		"en": "Code",
+		"fr": "Code",
+		"de": "Code",
+		"pt": "Codigo"
+	},
+	"warranty.field.coverage": {
+		"en": "Coverage",
+		"fr": "Couverture",
+		"de": "Garantieumfang",
+		"pt": "Cobertura"
+	},
+	"warranty.field.description": {
+		"en": "Description",
+		"fr": "Description",
+		"de": "Beschreibung",
+		"pt": "Descrição"
+	},
+	"warranty.search.empty": {
+		"en": "There is no result for that search",
+		"fr": "Il n'y a aucun résultat pour cette recherche",
+		"de": "Für Ihre Suche gibt es kein Ergebnis",
+		"pt": "Não há resultados para essa pesquisa"
+	},
+	"whame.open_chat": {
+		"en": "",
+		"fr": "Ouvrir le chat",
+		"de": "Öffne den Chat",
+		"pt": ""
+	},
+	"workwithus.btn.selectone": {
+		"en": "Select one",
+		"fr": "",
+		"de": "Auswählen",
+		"pt": "Selecione um"
+	},
+	"workwithus.btn.send": {
+		"en": "Send",
+		"fr": "Envoyer",
+		"de": "Senden",
+		"pt": "Enviar"
+	},
+	"workwithus.fback.alert.captcha1": {
+		"en": "Sorry, Google could not be contacted to verify the captcha",
+		"fr": "Désolé, Google n'a pas pu être contacté pour vérifier le captcha",
+		"de": "Leider konnte Google nicht kontaktiert werden, um das Captcha zu überprüfen.",
+		"pt": "Desculpe, não foi possível contactar o Google para verificar o captcha"
+	},
+	"workwithus.fback.alert.captcha2": {
+		"en": "Sorry, you did not solve the captcha challenge correctly",
+		"fr": "Désolé, vous n'avez pas résolu correctement le défi captcha",
+		"de": "Entschuldigung, Sie haben die Captcha-Eingabe nicht richtig gelöst",
+		"pt": "Desculpe, não resolveu corretamente o desafio do captcha"
+	},
+	"workwithus.fback.alert.email": {
+		"en": "Please, fill in your e-mail",
+		"fr": "Veuillez remplir votre e-mail",
+		"de": "Bitte geben Sie Ihre E-Mail-Adresse an",
+		"pt": "Por favor preencha o seu e-mail"
+	},
+	"workwithus.fback.alert.message": {
+		"en": "Do you want to say some thing?",
+		"fr": "Tu veux dire quelque chose?",
+		"de": "Möchten Sie uns etwas mitteilen?",
+		"pt": "Quer dizer alguma coisa?"
+	},
+	"workwithus.fback.alert.name": {
+		"en": "Please, fill in your name",
+		"fr": "Veuillez remplir votre nom",
+		"de": "Bitte geben Sie Ihren Namen an",
+		"pt": "Por favor preencha o seu nome"
+	},
+	"workwithus.fback.alert.pripol": {
+		"en": "You must accept the privacy policy",
+		"fr": "Vous devez accepter la politique de confidentialité",
+		"de": "Sie müssen die Datenschutzbestimmungen akzeptieren",
+		"pt": "Deve aceitar a política de privacidade"
+	},
+	"workwithus.fback.thanks": {
+		"en": "Thanks for contacting us. We will answer as soon as possible.",
+		"fr": "Merci de nous avoir contacté. Nous vous répondrons dans les plus brefs délais.",
+		"de": "Danke für Ihre Anfrage, wir antworten schnellstmöglich.",
+		"pt": "Obrigado por nos contactar. Responderemos o mais breve possível."
+	},
+	"workwithus.field.document": {
+		"en": "Document",
+		"fr": "Document",
+		"de": "Dokument",
+		"pt": "Documento"
+	},
+	"workwithus.field.email": {
+		"en": "E-mail",
+		"fr": "E-mail",
+		"de": "E-Mail",
+		"pt": "E-mail"
+	},
+	"workwithus.field.message": {
+		"en": "Message",
+		"fr": "Message",
+		"de": "Nachricht",
+		"pt": "Mensagem"
+	},
+	"workwithus.field.name": {
+		"en": "Fullname",
+		"fr": "Nome",
+		"de": "Name",
+		"pt": "Nome completo"
+	},
+	"workwithus.field.pripol": {
+		"en": "I accept the <a href=\"%s\" target=\"_blank\" title=\"Privacy policy\">privacy policy</a>",
+		"fr": "J’accepte la <a href=\"%s\" target=\"_blank\" title=\"Politique de confidentialité\">politique de confidentialité</a>",
+		"de": "Ich stimme der <a href=\"%s\" target=\"_blank\" title=\"Datenschutzerklärung\">Datenschutzerklärung</a> zu",
+		"pt": "Declaro que aceito <a href=\"%s\" target=\"_blank\" title=\"Privacy policy\">privacy policy</a>"
+	}
+}

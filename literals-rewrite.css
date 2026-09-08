@@ -1,0 +1,33 @@
+#lr-dropzone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px dashed var(--border);
+	border-radius: var(--radius);
+	padding: 32px 24px;
+	color: var(--text-2);
+	font-size: 13px;
+	cursor: pointer;
+	transition: border-color .15s, background .15s, color .15s;
+	position: relative;
+}
+
+#lr-dropzone:hover,
+#lr-dropzone.drag-over {
+	border-color: var(--accent);
+	background: var(--accent-bg);
+	color: var(--accent);
+}
+
+#lr-dropzone input[type="file"] {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+#lr-status { font-size: 13px; min-height: 1.4em; }
+#lr-status[data-type="ok"]    { color: #16a34a; }
+#lr-status[data-type="error"] { color: #dc2626; }

@@ -1,0 +1,55 @@
+/* Fila de opciones */
+#sqlb-options {
+	display:   flex;
+	flex-wrap: wrap;
+	gap:       12px;
+	margin:    12px 0;
+}
+
+#sqlb-options label {
+	display:        flex;
+	flex-direction: column;
+	gap:            4px;
+	font-size:      13px;
+	color:          var(--text-2);
+}
+
+#sqlb-options select {
+	margin-top: 0;
+}
+
+/* Barra de resultado */
+#sqlb-output-wrap {
+	margin-top: 24px;
+}
+
+#sqlb-output-bar {
+	display:         flex;
+	align-items:     center;
+	justify-content: space-between;
+	margin-bottom:   6px;
+}
+
+#sqlb-output-bar span {
+	font-size:   13px;
+	color:       var(--text-2);
+}
+
+#sqlb-output {
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size:   13px;
+	line-height: 1.6;
+	resize:      vertical;
+	width:       100%;
+}
+
+/* Estado / errores */
+#sqlb-status {
+	margin-top: 8px;
+	font-size:  13px;
+	color:      var(--text-2);
+}
+
+#sqlb-status.error {
+	color: #ef4444;
+}

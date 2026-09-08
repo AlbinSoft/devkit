@@ -1,0 +1,31 @@
+<form id="rt-form">
+  <div class="rt-row">
+    <label class="rt-pattern">Pattern<br>
+      <input type="text" id="rt-pattern" spellcheck="false" placeholder="\b\w+\b">
+    </label>
+    <label>Flags<br>
+      <input type="text" id="rt-flags" spellcheck="false" value="g" placeholder="gimsuy">
+    </label>
+  </div>
+  <label>Test string<br>
+    <textarea id="rt-test" rows="6" spellcheck="false"></textarea>
+  </label>
+  <label>Replacement (optional)<br>
+    <input type="text" id="rt-replace" spellcheck="false" placeholder="$&amp;">
+  </label>
+</form>
+<p id="rt-error" hidden></p>
+<div id="rt-output" hidden>
+  <section>
+    <h2>Matches (<span id="rt-count">0</span>)</h2>
+    <pre id="rt-highlight"></pre>
+  </section>
+  <section id="rt-list-section">
+    <h2>Groups</h2>
+    <div id="rt-list"></div>
+  </section>
+  <section id="rt-replace-section" hidden>
+    <h2>Replace result</h2>
+    <pre id="rt-replace-out"></pre>
+  </section>
+</div>

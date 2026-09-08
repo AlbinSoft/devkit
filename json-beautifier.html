@@ -1,0 +1,25 @@
+<form id="jsonb-form">
+  <p><label>JSON<br><textarea id="jsonb-input" rows="6" placeholder='{"key":"value"}'></textarea></label></p>
+  <div>
+    <label>Indent
+      <select id="jsonb-indent">
+        <option value="2">2 spaces</option>
+        <option value="3">3 spaces</option>
+        <option value="4" selected>4 spaces</option>
+        <option value="tab">Tab</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <button type="button" id="jsonb-format">Format</button>
+    <button type="button" id="jsonb-minify">Minify</button>
+  </div>
+</form>
+
+<div id="jsonb-output-wrap" hidden>
+  <div id="jsonb-output-bar">
+    <span>Result</span>
+    <button type="button" id="jsonb-copy">Copy</button>
+  </div>
+  <textarea id="jsonb-output" readonly rows="14" spellcheck="false"></textarea>
+</div>

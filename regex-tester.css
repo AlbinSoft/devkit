@@ -1,0 +1,109 @@
+.rt-row {
+	display: flex;
+	gap:     12px;
+}
+
+.rt-row .rt-pattern { flex: 1; }
+
+.rt-row label:not(.rt-pattern) { width: 120px; }
+
+#rt-pattern,
+#rt-flags {
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size:   13px;
+}
+
+#rt-test {
+	resize:      vertical;
+	min-height:  110px;
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size:   13px;
+}
+
+#rt-error {
+	font-size:  13px;
+	color:      #ef4444;
+	margin-top: 4px;
+}
+
+#rt-output:not([hidden]) {
+	display:        flex;
+	flex-direction: column;
+	gap:            12px;
+}
+
+#rt-output section { margin-bottom: 0; }
+
+#rt-highlight,
+#rt-replace-out {
+	margin:        0;
+	padding:       12px 14px;
+	background:    var(--bg);
+	border:        1px solid var(--border);
+	border-radius: 6px;
+	font-family:   ui-monospace, 'Cascadia Code', monospace;
+	font-size:     13px;
+	white-space:   pre-wrap;
+	word-break:    break-word;
+	color:         var(--text);
+	min-height:    42px;
+}
+
+#rt-highlight mark {
+	background:    var(--accent-bg);
+	color:        var(--accent);
+	border-radius: 2px;
+	padding:      0 1px;
+}
+
+#rt-highlight mark.rt-zero {
+	display:       inline-block;
+	width:         2px;
+	height:        1em;
+	vertical-align: text-bottom;
+	background:    var(--accent);
+	padding:      0;
+}
+
+#rt-list .rt-empty {
+	font-size: 13px;
+	color:     var(--text-2);
+}
+
+.rt-match {
+	border:        1px solid var(--border);
+	border-radius: 6px;
+	padding:       10px 12px;
+	margin-bottom: 8px;
+}
+
+.rt-match:last-child { margin-bottom: 0; }
+
+.rt-match-head {
+	font-size:     12px;
+	color:         var(--text-2);
+	margin-bottom: 6px;
+}
+
+.rt-group {
+	display:     flex;
+	gap:         10px;
+	align-items: baseline;
+	padding:     2px 0;
+}
+
+.rt-group-label {
+	flex-shrink: 0;
+	width:       110px;
+	font-size:   12px;
+	color:       var(--text-2);
+}
+
+.rt-group code {
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size:   13px;
+	color:       var(--text);
+	word-break:  break-all;
+}
+
+.rt-group code.rt-muted { color: var(--text-2); }

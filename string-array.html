@@ -1,0 +1,37 @@
+<div id="sa-wrap">
+  <textarea id="sa-text" rows="12" spellcheck="false" placeholder="One item per line, or a [1, 2, 3] literal"></textarea>
+
+  <div class="sa-convert">
+    <button type="button" id="sa-to-array">array2string</button>
+    <button type="button" id="sa-to-string">string2array</button>
+  </div>
+
+  <div class="sa-ops">
+    <select id="sa-op">
+      <optgroup label="map">
+        <option value="lower">map to lower</option>
+        <option value="upper">map to upper</option>
+        <option value="camel">map to camelCase</option>
+        <option value="pascal">map to PascalCase</option>
+        <option value="snake">map to snake_case</option>
+        <option value="kebab">map to kebab-case</option>
+        <option value="screaming">map to SCREAMING_SNAKE_CASE</option>
+      </optgroup>
+      <optgroup label="array">
+        <option value="sort">sort</option>
+        <option value="sortReverse">sort reverse</option>
+        <option value="unique">unique</option>
+        <option value="filterEmpty">filter (remove empties)</option>
+        <option value="sqlIn">stringify for SQL IN</option>
+      </optgroup>
+    </select>
+    <button type="button" id="sa-do">DO</button>
+  </div>
+
+  <div class="sa-actions">
+    <button type="button" id="sa-copy">Copy</button>
+    <button type="button" id="sa-undo" disabled>Undo</button>
+  </div>
+
+  <p id="sa-status"></p>
+</div>

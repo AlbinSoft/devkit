@@ -1,0 +1,22 @@
+<form id="tr-form">
+  <div class="tr-row">
+    <label class="tr-host-label">Host or IP<br>
+      <input type="text" id="tr-host" placeholder="google.com or 8.8.8.8" spellcheck="false" autocomplete="off">
+    </label>
+    <label>Max hops<br>
+      <select id="tr-maxhops">
+        <option value="15">15</option>
+        <option value="30" selected>30</option>
+        <option value="64">64</option>
+      </select>
+    </label>
+  </div>
+  <div class="tr-actions">
+    <button type="submit" id="tr-submit">Trace</button>
+    <button type="button" id="tr-stop" hidden>Stop</button>
+  </div>
+</form>
+<p id="tr-status"></p>
+<div id="tr-output" hidden>
+  <pre id="tr-pre"></pre>
+</div>

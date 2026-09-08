@@ -1,0 +1,14 @@
+"SwissTools" is fine but a bit generic. A few alternatives off the top of my head:                                    
+  - Toolbox — simple, universal, but very taken                                                                           - Quickset — fast set of tools, clean
+  - Toolchest — a bit more character
+  - Wrenchbox — playful
+  - Tinker — catchy, implies hands-on
+  - Workbench — developer connotation, also taken everywhere
+  - Devkit — dev-focused, a bit serious
+  - Nibble — small but useful, different vibe
+  - Sidekick — helper tools
+
+  My honest pick: Tinker — short, memorable, implies you're doing small hands-on tasks, and has personality without
+  being try-hard. Alternatively if you want something more "utility belt" feel, Toolchest works well.
+
+  What direction appeals to you — playful, neutral, or more dev-serious?

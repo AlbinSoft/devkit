@@ -1,0 +1,18 @@
+<form id="uuid-form">
+  <div class="uuid-row">
+    <label>Version<br>
+      <select id="uuid-version">
+        <option value="v4">v4 — random</option>
+        <option value="v7">v7 — time-ordered</option>
+      </select>
+    </label>
+    <label>Quantity<br>
+      <select id="uuid-count"></select>
+    </label>
+  </div>
+  <button type="submit">Generate</button>
+</form>
+<div id="uuid-output" hidden>
+  <ul id="uuid-list"></ul>
+  <button type="button" id="uuid-copy-all">Copy all</button>
+</div>

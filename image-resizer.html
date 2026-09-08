@@ -1,0 +1,50 @@
+<label id="ir-dropzone">
+  <input type="file" id="ir-input" accept="image/jpeg,image/png,image/webp" multiple>
+  <span id="ir-drop-label">Drop images here or click to select</span>
+</label>
+<p id="ir-status"></p>
+<section id="ir-controls" hidden>
+  <h2>Options</h2>
+  <fieldset id="ir-mode-group">
+    <legend>Mode</legend>
+    <label><input type="radio" name="ir-mode" value="max-width" checked> Max width</label>
+    <label><input type="radio" name="ir-mode" value="max-height"> Max height</label>
+    <label><input type="radio" name="ir-mode" value="fixed"> Fixed</label>
+  </fieldset>
+  <div class="ir-field" id="ir-width-wrap">
+    <label for="ir-width">Width</label>
+    <input type="number" id="ir-width" min="1" value="800">
+    <span class="ir-unit">px</span>
+  </div>
+  <div class="ir-field" id="ir-height-wrap" hidden>
+    <label for="ir-height">Height</label>
+    <input type="number" id="ir-height" min="1" value="600">
+    <span class="ir-unit">px</span>
+  </div>
+  <div class="ir-field" id="ir-fit-wrap" hidden>
+    <label for="ir-fit">Fit</label>
+    <select id="ir-fit">
+      <option value="contain">Contain</option>
+      <option value="cover" selected>Cover</option>
+      <option value="fill">Stretch</option>
+    </select>
+  </div>
+  <div class="ir-field" id="ir-format-wrap">
+    <label for="ir-format">Format</label>
+    <select id="ir-format">
+      <option value="original">Keep original</option>
+      <option value="image/jpeg">JPEG</option>
+      <option value="image/png">PNG</option>
+      <option value="image/webp">WebP</option>
+    </select>
+  </div>
+  <button type="button" id="ir-run">Resize</button>
+</section>
+<section id="ir-results" hidden>
+  <h2>Results</h2>
+  <div id="ir-list"></div>
+  <div id="ir-bulk-actions">
+    <button type="button" id="ir-download-all">Download all</button>
+    <button type="button" id="ir-download-zip">Download ZIP</button>
+  </div>
+</section>

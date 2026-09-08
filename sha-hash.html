@@ -1,0 +1,19 @@
+<form id="sha-form">
+  <label>Text<br>
+    <input type="text" id="sha-input" placeholder="Text to hash" autocomplete="off" spellcheck="false">
+  </label>
+  <label id="sha-dropzone">
+    <input type="file" id="sha-file">
+    <span id="sha-drop-label">Or drop a file here — max 100 MB</span>
+  </label>
+  <label>Algorithm<br>
+    <select id="sha-algo">
+      <option value="SHA-1">SHA-1</option>
+      <option value="SHA-256" selected>SHA-256</option>
+      <option value="SHA-512">SHA-512</option>
+    </select>
+  </label>
+  <button type="submit">Generate</button>
+</form>
+<p id="sha-status"></p>
+<output id="sha-output"></output>

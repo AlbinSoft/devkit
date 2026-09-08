@@ -1,0 +1,35 @@
+<form id="jwt-form">
+  <label>JWT<br>
+    <textarea id="jwt-input" rows="4" spellcheck="false" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjMifQ.signature"></textarea>
+  </label>
+</form>
+<p id="jwt-error" hidden></p>
+<div id="jwt-output" hidden>
+  <section>
+    <h2>Header</h2>
+    <pre id="jwt-header"></pre>
+  </section>
+  <section>
+    <h2>Payload</h2>
+    <pre id="jwt-payload"></pre>
+    <dl id="jwt-claims"></dl>
+  </section>
+  <section>
+    <h2>Signature</h2>
+    <div class="jwt-verify-row">
+      <label>Secret<br>
+        <input type="text" id="jwt-secret" spellcheck="false" autocomplete="off">
+      </label>
+      <label>Algorithm<br>
+        <select id="jwt-alg">
+          <option value="HS256">HS256</option>
+          <option value="HS384">HS384</option>
+          <option value="HS512">HS512</option>
+        </select>
+      </label>
+      <label class="jwt-chk"><input type="checkbox" id="jwt-secret-b64"> Secret is Base64</label>
+    </div>
+    <button type="button" id="jwt-verify">Verify signature</button>
+    <p id="jwt-verify-result" hidden></p>
+  </section>
+</div>

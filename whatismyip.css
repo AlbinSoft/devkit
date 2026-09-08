@@ -1,0 +1,25 @@
+#wip-status {
+	font-size: 13px;
+	color: var(--text-2);
+	margin-bottom: 4px;
+}
+
+#wip-content {
+	margin-bottom: 12px;
+}
+
+.wip-ip {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.wip-ip code {
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size: 13px;
+	color: var(--text);
+}
+
+.wip-na {
+	color: var(--text-2);
+}

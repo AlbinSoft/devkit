@@ -1,0 +1,19 @@
+<form id="vjson-form">
+  <label>JSON<br>
+    <textarea id="vjson-input" rows="6" placeholder='{"key": "value"}'></textarea>
+  </label>
+  <label id="vjson-dropzone">
+    <input type="file" id="vjson-file" accept=".json">
+    <span>Or drop a .json here</span>
+  </label>
+  <button type="button" id="vjson-parse">Parse</button>
+</form>
+
+<div id="vjson-query-row">
+  <input type="text" id="vjson-query" placeholder="$.foo.bar" disabled>
+  <button type="button" id="vjson-query-btn" disabled>Filter</button>
+  <span id="vjson-query-status">Loading JSONPath…</span>
+</div>
+
+<div id="vjson-tree"></div>
+<div id="vjson-result"></div>

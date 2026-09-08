@@ -1,0 +1,31 @@
+<form id="hchk-form">
+  <label>Text<br>
+    <textarea id="hchk-text" rows="4" placeholder="Text to hash…" spellcheck="false"></textarea>
+  </label>
+  <label id="hchk-dropzone">
+    <input type="file" id="hchk-file">
+    <span id="hchk-drop-label">Or drop a file here — max 100 MB</span>
+  </label>
+  <label>Expected hash<br>
+    <input type="text" id="hchk-hash" placeholder="Paste the hash to verify (optional)…" spellcheck="false" autocomplete="off">
+  </label>
+  <div class="hchk-row">
+    <label>Algorithm<br>
+      <select id="hchk-algo">
+        <option value="auto">Auto-detect</option>
+        <option value="md5">MD5</option>
+        <option value="sha1">SHA-1</option>
+        <option value="sha256">SHA-256</option>
+        <option value="sha512">SHA-512</option>
+      </select>
+    </label>
+    <span id="hchk-detected"></span>
+  </div>
+  <button type="submit">Compute</button>
+</form>
+<p id="hchk-status"></p>
+<div id="hchk-result" hidden>
+  <p id="hchk-verdict"></p>
+  <output id="hchk-computed"></output>
+  <button type="button" id="hchk-copy">Copy hash</button>
+</div>

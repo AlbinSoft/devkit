@@ -1,0 +1,40 @@
+/* Estilos del JSON Beautifier */
+
+#jsonb-form > div {
+	align-items: flex-end;
+}
+
+#jsonb-form label {
+	display:        flex;
+	flex-direction: column;
+	gap:            4px;
+}
+
+#jsonb-form select {
+	margin-top: 0;
+}
+
+/* Barra de resultado */
+#jsonb-output-wrap {
+	margin-top: 24px;
+}
+
+#jsonb-output-bar {
+	display:         flex;
+	align-items:     center;
+	justify-content: space-between;
+	margin-bottom:   6px;
+}
+
+#jsonb-output-bar span {
+	font-size: 13px;
+	color:     var(--text-2);
+}
+
+#jsonb-output {
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size:   13px;
+	line-height: 1.6;
+	resize:      vertical;
+	width:       100%;
+}

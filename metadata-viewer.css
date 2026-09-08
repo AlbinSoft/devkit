@@ -1,0 +1,98 @@
+#mdv-wrap {
+	display:        flex;
+	flex-direction: column;
+	gap:            12px;
+}
+
+/* Drop zone -- misma estetica que hex-view */
+#mdv-drop {
+	display:         flex;
+	align-items:     center;
+	justify-content: center;
+	border:          2px dashed var(--border);
+	border-radius:   var(--radius);
+	padding:         20px 24px;
+	color:           var(--text-2);
+	font-size:       13px;
+	cursor:          pointer;
+	position:        relative;
+	transition:      border-color .15s, background .15s, color .15s;
+}
+
+#mdv-drop:hover,
+#mdv-drop.drag-over {
+	border-color: var(--accent);
+	background:   var(--accent-bg);
+	color:        var(--accent);
+}
+
+#mdv-drop input[type="file"] {
+	position: absolute;
+	inset:    0;
+	opacity:  0;
+	cursor:   pointer;
+	width:    100%;
+	height:   100%;
+}
+
+#mdv-msg {
+	font-size: 13px;
+	color:     var(--text-2);
+}
+
+#mdv-result:not([hidden]) {
+	display:        flex;
+	flex-direction: column;
+	gap:            12px;
+}
+
+#mdv-top {
+	display:     flex;
+	gap:         16px;
+	align-items: flex-start;
+	flex-wrap:   wrap;
+}
+
+#mdv-preview {
+	max-width:     220px;
+	max-height:    220px;
+	height:        auto;
+	border:        1px solid var(--border);
+	border-radius: var(--radius);
+	background:    #fff;
+}
+
+.mdv-warning {
+	flex:          1;
+	min-width:     220px;
+	padding:       12px 14px;
+	font-size:     13px;
+	line-height:   1.5;
+	color:         #92400e;
+	background:    #fef3c7;
+	border:        1px solid #fcd34d;
+	border-radius: var(--radius);
+}
+
+.mdv-warning a { color: inherit; }
+
+html.dark .mdv-warning {
+	color:        #fde68a;
+	background:   #422006;
+	border-color: #854d0e;
+}
+
+#mdv-sections {
+	display:        flex;
+	flex-direction: column;
+	gap:            12px;
+}
+
+#mdv-sections section { margin-bottom: 0; }
+#mdv-sections dl      { margin: 0; }
+#mdv-sections dd      { word-break: break-word; }
+
+#mdv-actions {
+	display: flex;
+	gap:     8px;
+}

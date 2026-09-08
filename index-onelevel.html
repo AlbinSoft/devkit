@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="/" />
+	<title>Devkit</title>
+	<link id="tool-css" rel="stylesheet" href="" />
+	<style>
+	/* Yo haré los CSS */
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/jszip@3/dist/jszip.min.js"></script>
+	<script type="module">
+		const urlbase = 'https://prj5.albin.es/Swisstools/';
+		const basePath = new URL(urlbase).pathname; // '/Swisstools/'
+		document.querySelector('base').href = urlbase;
+
+		let tools = [];
+
+		async function init() {
+			tools = await fetch(urlbase + 'registry.json').then(r => r.json());
+			buildMenu();
+			routeFromURL();
+		}
+
+		function buildMenu() {
+			const ul = document.querySelector('aside > ul');
+			ul.innerHTML = '';
+			for (const tool of tools) {
+				const li = document.createElement('li');
+				const a = document.createElement('a');
+				a.href = basePath + tool.slug.slice(1);
+				a.textContent = tool.name;
+				a.dataset.slug = tool.slug;
+				a.addEventListener('click', e => {
+					e.preventDefault();
+					history.pushState({ slug: tool.slug }, tool.name, basePath + tool.slug.slice(1));
+					loadTool(tool);
+				});
+				li.appendChild(a);
+				ul.appendChild(li);
+			}
+		}
+
+		function setActive(slug) {
+			document.querySelectorAll('aside a').forEach(a => {
+				a.classList.toggle('active', a.dataset.slug === slug);
+			});
+		}
+
+		function routeFromURL() {
+			const slug = '/' + window.location.pathname.slice(basePath.length);
+			const tool = tools.find(t => t.slug === slug);
+			if (tool) loadTool(tool);
+		}
+
+		async function loadTool(tool) {
+			const main = document.querySelector('main');
+
+			// CSS de la herramienta
+			const cssLink = document.getElementById('tool-css');
+			cssLink.href = tool.css ? urlbase + tool.css : '';
+
+			// HTML de la herramienta
+			const html = await fetch(urlbase + tool.html).then(r => r.text());
+			main.innerHTML = html;
+
+			// JS de la herramienta (módulo)
+			const module = await import(urlbase + tool.js);
+			if (typeof module.init === 'function') module.init();
+
+			setActive(tool.slug);
+		}
+
+		window.addEventListener('popstate', routeFromURL);
+
+		init();
+	</script>
+</head>
+<body>
+
+	<aside>
+		<ul></ul>
+	</aside>
+	<main></main>
+
+</body>
+</html>

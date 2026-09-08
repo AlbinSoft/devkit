@@ -1,0 +1,384 @@
+[{
+	"name": "Code",
+	"tools": [{
+		"name": "JSON Beautifier",
+		"title": "JSON Beautifier — Format & Minify JSON",
+		"description": "Format and pretty-print JSON with configurable indentation, or minify it to a single line.",
+		"howto": "Paste your JSON in the input field, choose the indentation size and click Format. Click Minify to collapse it to a single line.",
+		"slug": "/json-beautifier",
+		"html": "json-beautifier.html",
+		"css": "json-beautifier.css",
+		"js": "json-beautifier.js"
+	}, {
+		"name": "SQL Beautifier",
+		"title": "SQL Beautifier — Format & Prettify SQL",
+		"description": "Format and prettify SQL queries with configurable dialect, indentation and keyword casing. Supports MySQL, PostgreSQL, T-SQL, PL/SQL, SQLite, MariaDB, DB2 and BigQuery.",
+		"howto": "Paste your SQL in the input field, choose the dialect, indentation size and keyword case, then click Format. Copy the result with the Copy button.",
+		"slug": "/sql-beautifier",
+		"html": "sql-beautifier.html",
+		"css": "sql-beautifier.css",
+		"js": "sql-beautifier.js"
+	}, {
+		"name": "Regex tester",
+		"title": "Regex Tester — Live Match & Replace",
+		"description": "Test a JavaScript regular expression against sample text: live match highlighting, capture groups and a replacement preview.",
+		"howto": "Type a pattern and flags, then paste your test string. Matches are highlighted and every capture group is listed. Add a replacement to preview the result of String.replace.",
+		"slug": "/regex",
+		"html": "regex-tester.html",
+		"css": "regex-tester.css",
+		"js": "regex-tester.js"
+	}]
+}, {
+	"name": "Browsers",
+	"tools": [{
+		"name": "Browser Report",
+		"title": "Browser Report & Feature Detection",
+		"description": "Full browser report: user agent, network, battery, storage, permissions, GPU, WebGL and supported APIs.",
+		"howto": "No input needed. All data is collected automatically from your browser's APIs when you open the tool. Some sections may prompt for permission.",
+		"slug": "/browser-report",
+		"html": "browser-report.html",
+		"css": "browser-report.css",
+		"js": "browser-report.js"
+	}, {
+		"name": "Screen Resolution",
+		"title": "Screen Resolution & Display Info",
+		"description": "Check your screen resolution, window size, pixel density, color depth and display orientation.",
+		"howto": "No input needed. Your display details are detected automatically. Resize the window to see values update in real time.",
+		"slug": "/screen-resolution",
+		"html": "screen-resolution.html",
+		"css": "screen-resolution.css",
+		"js": "screen-resolution.js"
+	}]
+}, {
+	"name": "Files",
+	"tools": [{
+		"name": "Email viewer",
+		"title": "EML Email Viewer",
+		"description": "Open and preview .eml email files directly in your browser — headers, body and attachments.",
+		"howto": "Drag and drop an .eml file onto the drop zone. Headers, body and any attachments will be displayed below.",
+		"slug": "/view-email",
+		"html": "view-eml.html",
+		"css": "view-eml.css",
+		"js": "view-eml.js"
+	}, {
+		"name": "Favicon generator",
+		"title": "Favicon Generator — All Sizes",
+		"description": "Generate all favicon sizes (ICO, PNG, Apple Touch, Android Chrome) and manifest.json from a single image.",
+		"howto": "Drag and drop a PNG or SVG image onto the drop zone. Download each size individually or grab the full ZIP with the manifest.json included.",
+		"slug": "/favicongen",
+		"html": "favicons.html",
+		"css": "favicons.css",
+		"js": "favicons.js"
+	}, {
+		"name": "Hex viewer",
+		"title": "Hex Viewer — Binary File Inspector",
+		"description": "Open any binary file and inspect its raw bytes as a hex dump. 16 bytes per row with ASCII sidebar. Hover or click a byte to highlight the corresponding pair and see its value.",
+		"howto": "Drop any file onto the drop zone. Hover a hex byte or its ASCII character to highlight the corresponding pair and see offset and value in the status bar. Click to pin the selection.",
+		"slug": "/hex-view",
+		"html": "hex-view.html",
+		"css": "hex-view.css",
+		"js": "hex-view.js"
+	}, {
+		"name": "Image converter",
+		"title": "Image Converter — JPEG, PNG, WebP",
+		"description": "Convert images between JPEG, PNG and WebP formats instantly in your browser, no upload needed.",
+		"howto": "Drag and drop an image onto the drop zone. Choose the output format, adjust quality if needed, and click Download.",
+		"slug": "/image-converter",
+		"html": "image-converter.html",
+		"css": "image-converter.css",
+		"js": "image-converter.js"
+	}, {
+		"name": "Image optimizer",
+		"title": "Image Optimizer — JPEG, PNG, WebP",
+		"description": "Compress and optimize JPEG, PNG and WebP images in your browser using native codecs, no upload needed.",
+		"howto": "Drag and drop one or more images onto the drop zone. Adjust quality if needed and download each optimized file individually.",
+		"slug": "/image-optimizer",
+		"html": "image-optimizer.html",
+		"css": "image-optimizer.css",
+		"js": "image-optimizer.js"
+	}, {
+		"name": "Image resizer",
+		"title": "Image Resizer - JPEG, PNG, WebP",
+		"description": "Resize one or more images by max width, max height, or fixed dimensions with contain, cover or stretch fit. No upload needed.",
+		"howto": "Drop one or more images onto the drop zone. Choose a resize mode, enter the target dimensions, pick an output format and click Resize. Download each result individually or all at once.",
+		"slug": "/image-resizer",
+		"html": "image-resizer.html",
+		"css": "image-resizer.css",
+		"js": "image-resizer.js"
+	}, {
+		"name": "JSON viewer",
+		"title": "JSON Viewer & JSONPath Explorer",
+		"description": "Visualize and explore JSON data as an interactive tree. Filter results with JSONPath expressions.",
+		"howto": "Paste JSON directly or drag a .json file onto the area. Expand and collapse nodes in the tree, or type a JSONPath expression to filter results.",
+		"slug": "/view-json",
+		"html": "view-json.html",
+		"css": "view-json.css",
+		"js": "view-json.js"
+	}, {
+		"name": "Markdown viewer",
+		"title": "Markdown Viewer — Live Preview",
+		"description": "Preview Markdown as rendered HTML in real time, with a toggle to inspect the generated HTML source.",
+		"howto": "Paste Markdown in the input field or drag and drop a .md file onto the drop zone. Switch between the Preview and HTML source tabs to see the rendered result or the underlying HTML markup.",
+		"slug": "/view-markdown",
+		"html": "view-markdown.html",
+		"css": "view-markdown.css",
+		"js": "view-markdown.js"
+	}, {
+		"name": "Image Shrink",
+		"title": "Image Shrink — Tinify-style Compression",
+		"description": "Shrink JPEG, PNG, WebP or AVIF images using a hosted compression service, with optional format conversion.",
+		"howto": "Drop one or more images onto the drop zone, optionally pick an output format, and click Shrink. Each image gets its own result card with a Download and Save button. Requires a Tinify API key configured in Settings.",
+		"slug": "/image-shrink",
+		"html": "image-shrink.html",
+		"css": "image-shrink.css",
+		"js": "image-shrink.js",
+		"requiresApiKey": "tinify"
+	}, {
+		"name": "Background Remover",
+		"title": "Background Remover — AI Background Removal",
+		"description": "Remove the background from any photo using a hosted AI model, with a choice of models for different subjects.",
+		"howto": "Drop one or more images onto the drop zone, choose a model, and click Remove background. Each image gets its own result card with a Download and Save button. Requires a Background Removal API key configured in Settings.",
+		"slug": "/bg-remove",
+		"html": "bg-remove.html",
+		"css": "bg-remove.css",
+		"js": "bg-remove.js",
+		"requiresApiKey": "bgrem"
+	}, {
+		"name": "Literals rewrite",
+		"title": "Literals Rewrite",
+		"description": "Rewrite string literals in JSON files.",
+		"howto": "Drop a JSON file onto the input area, edit the string values in the table, then download the rewritten file.",
+		"slug": "/literals-rewrite",
+		"html": "literals-rewrite.html",
+		"css": "literals-rewrite.css",
+		"js": "literals-rewrite.js",
+		"php": "literals-rewrite.php",
+		"private": true
+	}, {
+		"name": "QR code generator",
+		"title": "QR Code Generator — PNG & SVG",
+		"description": "Generate a QR code from text or a URL and download it as PNG or SVG. Everything runs locally in your browser.",
+		"howto": "Pick the content type, choose an error-correction level and PNG size, then type or paste your text. The QR code updates live; download it as PNG or SVG, or copy it to the clipboard.",
+		"slug": "/qr-code",
+		"html": "qr-code.html",
+		"css": "qr-code.css",
+		"js": "qr-code.js"
+	}, {
+		"name": "Metadata viewer",
+		"title": "Image Metadata Viewer — EXIF, XMP, IPTC, GPS",
+		"description": "Inspect the metadata of a JPEG, PNG, WebP or TIFF image: EXIF, GPS location, XMP, IPTC, ICC profile and PNG text chunks. Nothing is uploaded.",
+		"howto": "Drop an image onto the drop zone or click to pick one. The metadata is read locally in your browser and shown grouped by segment. Use Copy as JSON to grab everything at once.",
+		"slug": "/metadata-viewer",
+		"html": "metadata-viewer.html",
+		"css": "metadata-viewer.css",
+		"js": "metadata-viewer.js"
+	}]
+}, {
+	"name": "Network",
+	"tools": [{
+		"name": "CIDR calculator",
+		"title": "CIDR / Subnet Calculator",
+		"description": "Calculate network address, broadcast, host range, subnet mask and more from any IPv4 CIDR block.",
+		"howto": "Enter an IP address with prefix length (e.g. 192.168.1.0/24) and click Calculate.",
+		"slug": "/cidr",
+		"html": "cidr-calc.html",
+		"css": "cidr-calc.css",
+		"js": "cidr-calc.js"
+	}, {
+		"name": "DNS lookup",
+		"title": "DNS Lookup — A, AAAA, MX, TXT and more",
+		"description": "Query DNS records for any domain via DNS-over-HTTPS. Supports A, AAAA, MX, TXT, NS, CNAME, SOA, CAA and PTR.",
+		"howto": "Enter a domain name, choose a record type and click Lookup. Results come from Cloudflare's DNS-over-HTTPS resolver.",
+		"slug": "/dns-lookup",
+		"html": "dns-lookup.html",
+		"css": "dns-lookup.css",
+		"js": "dns-lookup.js"
+	}, {
+		"name": "Ping",
+		"title": "Ping — ICMP Network Test",
+		"description": "Send ICMP pings to any hostname or IPv4 address and measure round-trip time, with live streaming output.",
+		"howto": "Enter a hostname or IP address, choose the number of pings and click Ping. Results stream live as they arrive. Requires a PHP-enabled server.",
+		"slug": "/ping",
+		"html": "ping.html",
+		"css": "ping.css",
+		"js": "ping.js",
+		"php": "ping.php"
+	}, {
+		"name": "Traceroute",
+		"title": "Traceroute — Network Path Tracer",
+		"description": "Trace the network path to any hostname or IPv4 address, hop by hop, with live streaming output.",
+		"howto": "Enter a hostname or IP address, choose the maximum number of hops and click Trace. Each hop streams live as it responds. Requires a PHP-enabled server.",
+		"slug": "/traceroute",
+		"html": "traceroute.html",
+		"css": "traceroute.css",
+		"js": "traceroute.js",
+		"php": "traceroute.php"
+	}, {
+		"name": "What Is My IP",
+		"title": "What Is My IP — IPv4, IPv6 & Geolocation",
+		"description": "Instantly see your public IPv4 and IPv6 addresses, plus geolocation, ISP and network details.",
+		"howto": "Your IP information is detected automatically when you open the tool. Click Refresh to update.",
+		"slug": "/what-is-my-ip",
+		"html": "whatismyip.html",
+		"css": "whatismyip.css",
+		"js": "whatismyip.js"
+	}, {
+		"name": "Whois",
+		"title": "Whois Lookup",
+		"description": "Query WHOIS records for any domain or IPv4 address. Follows referrals to the authoritative server automatically.",
+		"howto": "Enter a domain name or IP address and click Whois. The tool queries IANA first, then follows the referral to the authoritative WHOIS server. Requires a PHP-enabled server.",
+		"slug": "/whois",
+		"html": "whois.html",
+		"css": "whois.css",
+		"js": "whois.js",
+		"php": "whois.php",
+		"hidden": true
+	}]
+}, {
+	"name": "Security",
+	"tools": [{
+		"name": "Hash checker",
+		"title": "Hash Checker — MD5, SHA-1, SHA-256, SHA-512",
+		"description": "Verify file or text integrity by computing and comparing MD5, SHA-1, SHA-256 or SHA-512 hashes, entirely in your browser.",
+		"howto": "Enter text or drop a file (max 100 MB). Paste the expected hash to compare, or leave it empty to just compute. The algorithm is auto-detected from the hash length.",
+		"slug": "/hash-checker",
+		"html": "hash-checker.html",
+		"css": "hash-checker.css",
+		"js": "hash-checker.js"
+	}, {
+		"name": "Password generator",
+		"title": "Password Generator",
+		"description": "Generate strong, cryptographically random passwords with full control over length, character sets and quantity.",
+		"howto": "Choose a length and how many passwords to generate. Check the character sets you want to include and optionally exclude ambiguous characters. Click Generate and copy any result with its button.",
+		"slug": "/password-generator",
+		"html": "password-generator.html",
+		"css": "password-generator.css",
+		"js": "password-generator.js"
+	}, {
+		"name": "JWT decoder",
+		"title": "JWT Decoder & HS256 Verifier",
+		"description": "Decode a JSON Web Token's header and payload, inspect the standard claims with expiry countdown, and verify HS256/384/512 signatures with a shared secret.",
+		"howto": "Paste a JWT to see its header and payload decoded instantly. To check the signature, enter the shared secret, pick the HMAC algorithm and click Verify. Everything stays in your browser.",
+		"slug": "/jwt",
+		"html": "jwt-decoder.html",
+		"css": "jwt-decoder.css",
+		"js": "jwt-decoder.js"
+	}]
+}, {
+	"name": "Server",
+	"tools": [{
+		"name": "htpasswd generator",
+		"title": "htpasswd Generator — Apache Basic Auth",
+		"description": "Generate .htaccess and .htpasswd content for Apache HTTP Basic Authentication using bcrypt.",
+		"howto": "Fill in the path where the .htpasswd file will live on the server, the realm shown in the browser login prompt, and the username and password. Click Generate, then copy each block into the corresponding file.",
+		"slug": "/htpasswd",
+		"html": "htpasswd.html",
+		"css": "htpasswd.css",
+		"js": "htpasswd.js"
+	}]
+}, {
+	"name": "String",
+	"tools": [{
+		"name": "Epoch converter",
+		"title": "Epoch / Unix Timestamp Converter",
+		"description": "Convert Unix timestamps to and from human dates: seconds or milliseconds, UTC and local time, relative time, ISO week and a live clock.",
+		"howto": "Type a timestamp to see every date format, or use a local date picker or a pasted date string to get the epoch back. Auto-detects seconds vs milliseconds.",
+		"slug": "/epoch",
+		"html": "epoch-converter.html",
+		"css": "epoch-converter.css",
+		"js": "epoch-converter.js"
+	}, {
+		"name": "String / Array",
+		"title": "String / Array Converter & List Tools",
+		"description": "Turn a newline-separated list into a JS array literal and back, and run list operations on it: map case, sort, unique, filter empties and stringify for a SQL IN clause.",
+		"howto": "Paste one item per line, or a [1, 2, 3] literal. Use array2string and string2array to switch representation. Pick an operation and click DO to transform the list in place; Undo reverts the last change.",
+		"slug": "/string-array",
+		"html": "string-array.html",
+		"css": "string-array.css",
+		"js": "string-array.js"
+	}, {
+		"name": "Base64",
+		"title": "Base64 Encode & Decode",
+		"description": "Encode text to Base64 or decode Base64 back to plain text, directly in your browser.",
+		"howto": "Paste your text in the input field and choose Encode or Decode. The result appears instantly.",
+		"slug": "/base64",
+		"html": "base64.html",
+		"css": "base64.css",
+		"js": "base64.js"
+	}, {
+		"name": "HTML Entities",
+		"title": "HTML Entities Encode & Decode",
+		"description": "Encode special characters to HTML entities (&amp;, &lt;, &gt;, &quot;, &#39;) or decode any HTML entity — named or numeric — back to plain text.",
+		"howto": "Paste your text in the input field and choose Encode or Decode. The result appears instantly.",
+		"slug": "/html-entities",
+		"html": "html-entities.html",
+		"css": "html-entities.css",
+		"js": "html-entities.js"
+	}, {
+		"name": "Case converter",
+		"title": "Case Converter",
+		"description": "Convert text or identifiers between camelCase, PascalCase, snake_case, kebab-case, SCREAMING_SNAKE_CASE and more.",
+		"howto": "Paste or type any text — word boundaries are detected automatically from spaces, hyphens, underscores and capital letters. All formats update live.",
+		"slug": "/case-converter",
+		"html": "case-converter.html",
+		"css": "case-converter.css",
+		"js": "case-converter.js"
+	}, {
+		"name": "Char info",
+		"title": "Character Info — ASCII & Unicode",
+		"description": "Look up any character's ASCII value, Unicode codepoint and all its encodings: decimal, hex, U+, HTML entities, CSS escape, URL percent-encoding, UTF-8 bytes and binary.",
+		"howto": "Type or paste a character in the big field to see all its codes instantly. Or edit any code field directly — the character and all other formats update live.",
+		"slug": "/char-info",
+		"html": "char-info.html",
+		"css": "char-info.css",
+		"js": "char-info.js"
+	}, {
+		"name": "MD5",
+		"title": "MD5 Hash Generator",
+		"description": "Generate an MD5 hash from any text string, instantly in your browser.",
+		"howto": "Type or paste any text into the field. The MD5 hash is computed instantly as you type.",
+		"slug": "/md5",
+		"html": "md5.html",
+		"css": "md5.css",
+		"js": "md5.js"
+	}, {
+		"name": "SHA hash",
+		"title": "SHA Hash Generator — SHA-1, SHA-256, SHA-512",
+		"description": "Generate SHA-1, SHA-256 or SHA-512 hashes from any text string, instantly in your browser.",
+		"howto": "Type or paste text, or drop a file (max 100 MB). Pick an algorithm. The hash updates as you type; for files it computes on drop.",
+		"slug": "/sha-hash",
+		"html": "sha-hash.html",
+		"css": "sha-hash.css",
+		"js": "sha-hash.js"
+	}, {
+		"name": "URL encoding",
+		"title": "URL Encode & Decode",
+		"description": "Encode or decode URL components (percent-encoding) instantly in your browser.",
+		"howto": "Paste a URL component in the field and choose Encode or Decode. Switch between modes at any time.",
+		"slug": "/urlencode",
+		"html": "urlencode.html",
+		"css": "urlencode.css",
+		"js": "urlencode.js"
+	}, {
+		"name": "UUID generator",
+		"title": "UUID Generator — v4 & v7",
+		"description": "Generate cryptographically random UUIDs v4 or time-ordered UUIDs v7, in bulk.",
+		"howto": "Choose version and quantity, then click Generate. Copy individual UUIDs or all at once.",
+		"slug": "/uuid",
+		"html": "uuid-gen.html",
+		"css": "uuid-gen.css",
+		"js": "uuid-gen.js"
+	}]
+}, {
+	"name": "Settings",
+	"tools": [{
+		"name": "API Keys",
+		"title": "API Keys — Settings",
+		"description": "Configure personal API keys for the tools that use hosted services (Tinify, Background Removal).",
+		"howto": "Paste your API key for each service and click Save. Keys are stored only in this browser's local storage.",
+		"slug": "/settings",
+		"html": "settings.html",
+		"css": "settings.css",
+		"js": "settings.js"
+	}]
+}]

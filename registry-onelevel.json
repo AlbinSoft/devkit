@@ -1,0 +1,21 @@
+[{
+	"name": "MD5",
+	"slug": "/md5",
+	"html": "md5.html",
+	"css": "md5.css",
+	"js": "md5.js"
+}, {
+	"name": "Favicon generator",
+	"slug": "/favicongen",
+	"html": "favicons.html",
+	"css": "favicons.css",
+	"js": "favicons.js"
+}, {
+	"name": "Literals rewrite",
+	"slug": "/literals-rewrite",
+	"html": "literals-rewrite.html",
+	"css": "literals-rewrite.css",
+	"js": "literals-rewrite.js",
+	"php": "literals-rewrite.php",
+	"private": true
+}]

@@ -1,0 +1,80 @@
+/* Drop zone */
+#vjson-dropzone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px dashed var(--border);
+	border-radius: var(--radius);
+	padding: 20px 24px;
+	color: var(--text-2);
+	font-size: 13px;
+	cursor: pointer;
+	transition: border-color .15s, background .15s, color .15s;
+	position: relative;
+}
+
+#vjson-dropzone:hover,
+#vjson-dropzone.drag-over {
+	border-color: var(--accent);
+	background: var(--accent-bg);
+	color: var(--accent);
+}
+
+#vjson-dropzone input[type="file"] {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+/* JSONPath row */
+#vjson-query-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 24px;
+}
+
+#vjson-query-row input[type="text"] {
+	flex: 1;
+	margin-top: 0;
+}
+
+#vjson-query-status {
+	font-size: 12px;
+	color: var(--text-2);
+}
+
+/* Árbol */
+#vjson-tree,
+#vjson-result {
+	margin-top: 16px;
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+#vjson-tree details,
+#vjson-result details { padding-left: 18px; }
+
+#vjson-tree summary,
+#vjson-result summary { cursor: pointer; list-style: none; }
+
+#vjson-tree summary::before,
+#vjson-result summary::before {
+	content: '▶ ';
+	font-size: 10px;
+	color: var(--text-2);
+}
+
+#vjson-tree details[open] > summary::before,
+#vjson-result details[open] > summary::before { content: '▼ '; }
+
+.vjson-key     { color: var(--text); }
+.vjson-string  { color: #16a34a; }
+.vjson-number  { color: var(--accent); }
+.vjson-boolean { color: #d97706; }
+.vjson-null    { color: #94a3b8; }
+.vjson-count   { color: #94a3b8; font-size: 11px; }

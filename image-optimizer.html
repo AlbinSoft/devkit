@@ -1,0 +1,24 @@
+<!--
+PNG note: OxiPNG is lossless optimization (removes metadata, reorders chunks, tries filters) — reduces file size
+somewhat but does not do palette quantization like TinyPNG. The quality slider is hidden automatically for PNG
+because it does not apply. For more PNG savings in the future, consider @jsquash/oxipng with --quantization or pngquant.
+-->
+<label id="io-dropzone">
+  <input type="file" id="io-input" accept="image/jpeg,image/png,image/webp">
+  <span id="io-drop-label">Drop an image here</span>
+</label>
+<p id="io-status"></p>
+<section id="io-controls" hidden>
+  <h2>Options</h2>
+  <label id="io-quality-wrap" class="io-range-label">
+    Quality
+    <input type="range" id="io-quality" min="1" max="100" value="75">
+    <output id="io-quality-val">75</output>
+  </label>
+  <button type="button" id="io-optimize">Optimize</button>
+</section>
+<section id="io-result" hidden>
+  <h2>Result</h2>
+  <p id="io-sizes"></p>
+  <div id="io-actions"></div>
+</section>
