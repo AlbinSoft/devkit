@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate registry
+        run: node test.js
+      - name: Build public edition
+        run: node build.js --target=public --base=https://devkit.albin.es/ --out=dist
+      - name: Build full edition
+        run: node build.js --target=full --out=dist-full

@@ -1,0 +1,52 @@
+name: Deploy
+
+# Publishes the "public" edition (no server-side tools) to devkit.albin.es
+# over rsync/SSH. Disabled until the repo variable DEPLOY_ENABLED is "true"
+# and the secrets below are set.
+#
+# Repo variables (Settings > Secrets and variables > Actions > Variables):
+#   DEPLOY_ENABLED   "true" to arm this workflow
+#   PUBLIC_BASE      https://devkit.albin.es/
+#   SSH_PORT         optional, defaults to 22
+#
+# Repo secrets:
+#   SSH_HOST         server hostname
+#   SSH_USER         ssh user
+#   SSH_KEY          private deploy key (whole PEM), matching a key in the
+#                    server's ~/.ssh/authorized_keys
+#   SSH_KNOWN_HOSTS  output of: ssh-keyscan -p <port> <host>
+#   DEPLOY_PATH      absolute path of the web root on the server
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ vars.DEPLOY_ENABLED == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate registry
+        run: node test.js
+
+      - name: Build public edition
+        run: node build.js --target=public --base=${{ vars.PUBLIC_BASE }} --out=dist --buildid=${{ github.sha }}
+
+      - name: Deploy over rsync/SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          printf '%s\n' "${{ secrets.SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/deploy_key -p ${{ vars.SSH_PORT || '22' }}" \
+            dist/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/"

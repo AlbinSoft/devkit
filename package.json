@@ -1,0 +1,17 @@
+{
+  "name": "devkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ad-free, cookie-free developer tools",
+  "homepage": "https://devkit.albin.es",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlbinSoft/devkit.git"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "node build.js --target=public --base=https://devkit.albin.es/",
+    "build:full": "node build.js --target=full",
+    "deploy": "npm run test && npm run build && rsync -az --delete dist/ \"$DEPLOY_TARGET/\""
+  }
+}

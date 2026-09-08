@@ -1,0 +1,39 @@
+name: Release
+
+# On a v* tag: build the "full" edition (all tools except private) and
+# attach it as a zip to a GitHub Release, ready to drop into a PHP web root.
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate registry
+        run: node test.js
+
+      - name: Build full edition
+        run: node build.js --target=full --out=dist-full --buildid=${{ github.ref_name }}
+
+      - name: Package
+        run: |
+          cd dist-full
+          zip -r "../devkit-${{ github.ref_name }}.zip" .
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: devkit-${{ github.ref_name }}.zip
+          generate_release_notes: true
+          body: |
+            Self-hosting bundle: every tool except the ones marked `private`.
+            Unzip into a PHP-capable web root. See the README for server notes.
