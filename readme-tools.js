@@ -1,0 +1,73 @@
+#!/usr/bin/env node
+/*
+ * Regenerate the tool list in README.md from registry.json.
+ *
+ *   node readme-tools.js           rewrite the block in place
+ *   node readme-tools.js --check   exit 1 if the block is stale (used in CI)
+ *
+ * The block lives between the TOOLS:START / TOOLS:END markers in README.md.
+ * No dependencies.
+ */
+
+const fs   = require('fs');
+const path = require('path');
+
+const ROOT   = __dirname;
+const README = path.join(ROOT, 'README.md');
+const START  = '<!-- TOOLS:START -->';
+const END    = '<!-- TOOLS:END -->';
+
+const registry = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry.json'), 'utf8'));
+
+const groups = [...registry].sort((a, b) => a.name.localeCompare(b.name));
+const out = [
+	START,
+	'',
+	'<!-- Generado por readme-tools.js desde registry.json. No editar a mano: npm run readme -->',
+	'',
+];
+
+let total = 0;
+for (const group of groups) {
+	const tools = [...group.tools].sort((a, b) => a.name.localeCompare(b.name));
+	out.push(`### ${group.name}`, '');
+	for (const tool of tools) {
+		total++;
+		const tags = [];
+		if (Array.isArray(tool.needs) && tool.needs.length) tags.push(`needs ${tool.needs.join(', ')}`);
+		if (tool.private) tags.push('private');
+		const suffix = tags.length ? ` _(${tags.join('; ')})_` : '';
+		const desc   = String(tool.description || '').replace(/\s+/g, ' ').trim();
+		out.push(`- **${tool.name}** \`${tool.slug}\`${suffix}${desc ? ' — ' + desc : ''}`);
+	}
+	out.push('');
+}
+out.push(`_${total} herramientas en ${groups.length} grupos._`, '', END);
+
+const block  = out.join('\n');
+const readme = fs.readFileSync(README, 'utf8');
+const region = new RegExp(escapeRe(START) + '[\\s\\S]*?' + escapeRe(END));
+
+if (!region.test(readme)) {
+	console.error(`readme-tools: markers not found in README.md (${START} ... ${END})`);
+	process.exit(1);
+}
+
+const updated = readme.replace(region, block);
+const check   = process.argv.includes('--check');
+
+if (updated === readme) {
+	console.log('readme-tools: README.md is up to date');
+	process.exit(0);
+}
+if (check) {
+	console.error('readme-tools: README.md tool list is STALE - run: npm run readme');
+	process.exit(1);
+}
+
+fs.writeFileSync(README, updated);
+console.log(`readme-tools: README.md updated (${total} tools)`);
+
+function escapeRe(str) {
+	return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}

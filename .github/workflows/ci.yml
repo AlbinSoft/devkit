@@ -14,6 +14,8 @@ jobs:
           node-version: "20"
       - name: Validate registry
         run: node test.js
+      - name: Check README tool list is in sync
+        run: node readme-tools.js --check
       - name: Build public edition
         run: node build.js --target=public --base=https://devkit.albin.es/ --out=dist
       - name: Build full edition
