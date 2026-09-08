@@ -30,7 +30,9 @@
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/jszip@3/dist/jszip.min.js"></script>
 	<script type="module">
-		const urlbase = 'https://devkit.albin.es/';
+		// Se deriva de la ubicacion de la pagina: funciona en la raiz de un
+		// dominio, en una subcarpeta o en localhost sin configurar nada.
+		const urlbase = new URL('.', window.location.href).href;
 		const basePath = new URL(urlbase).pathname;
 		document.querySelector('base').href = urlbase;
 		document.getElementById('global-css').href = urlbase + 'style.css';

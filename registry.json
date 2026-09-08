@@ -153,6 +153,7 @@
 		"css": "literals-rewrite.css",
 		"js": "literals-rewrite.js",
 		"php": "literals-rewrite.php",
+		"needs": ["php"],
 		"private": true
 	}, {
 		"name": "QR code generator",
@@ -202,7 +203,8 @@
 		"html": "ping.html",
 		"css": "ping.css",
 		"js": "ping.js",
-		"php": "ping.php"
+		"php": "ping.php",
+		"needs": ["php"]
 	}, {
 		"name": "Traceroute",
 		"title": "Traceroute — Network Path Tracer",
@@ -212,7 +214,8 @@
 		"html": "traceroute.html",
 		"css": "traceroute.css",
 		"js": "traceroute.js",
-		"php": "traceroute.php"
+		"php": "traceroute.php",
+		"needs": ["php"]
 	}, {
 		"name": "What Is My IP",
 		"title": "What Is My IP — IPv4, IPv6 & Geolocation",
@@ -232,7 +235,7 @@
 		"css": "whois.css",
 		"js": "whois.js",
 		"php": "whois.php",
-		"hidden": true
+		"needs": ["php"]
 	}]
 }, {
 	"name": "Security",
