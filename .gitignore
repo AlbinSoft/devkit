@@ -5,6 +5,11 @@
 # Local per-deployment config (copy config.example.js -> config.js)
 /config.js
 
+# SSH deploy keys - never commit
+/deploy_key
+/deploy_key.pub
+*.pem
+
 # Node
 /node_modules/
 
