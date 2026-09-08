@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Ad-free, cookie-free developer tools",
+  "license": "CC-BY-ND-4.0",
   "homepage": "https://devkit.albin.es",
   "repository": {
     "type": "git",
