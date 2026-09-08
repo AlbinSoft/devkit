@@ -11,8 +11,10 @@ Many of the tools also work online if you just drop it in a folder.
 
 ## Public version
 
-There is a public version with the tools that don't use server CPU (no PHP
-or similar) for people who don't want to, or can't, host their own clone of
+**https://devkit.albin.es**
+
+A public version with the tools that don't use server CPU (no PHP or
+similar), for people who don't want to, or can't, host their own clone of
 the toolkit.
 
 ## Why
